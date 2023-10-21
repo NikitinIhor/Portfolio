@@ -467,6 +467,18 @@ h6 {
     position: absolute;
 }
 
+@media (max-width: 800px) {
+    .page__icon img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page__icon {
+        display: none;
+    }
+}
+
 .icon1 {
     top: 27%;
     left: 10%;
@@ -477,14 +489,45 @@ h6 {
     left: 64%;
 }
 
+@media (max-width: 880px) {
+    .icon2 {
+        left: 42%;
+    }
+}
+
 .icon3 {
     top: 14%;
     left: 48%;
 }
 
+@media (max-width: 1000px) {
+    .icon3 {
+        left: 60%;
+    }
+}
+
+@media (max-width: 880px) {
+    .icon3 {
+        top: 30%;
+    }
+}
+
+@media (max-width: 800px) {
+    .icon3 img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
 .icon4 {
     top: 72%;
     left: 15%;
+}
+
+@media (max-width: 880px) {
+    .icon4 {
+        left: 24%;
+    }
 }
 
 .icon5 {
@@ -497,9 +540,28 @@ h6 {
     left: 89%;
 }
 
+@media (max-width: 880px) {
+    .icon6 {
+        left: 77%;
+        top: 54%;
+    }
+}
+
 .icon7 {
     top: 10%;
     left: 71%;
+}
+
+@media (max-width: 1000px) {
+    .icon7 {
+        left: 85%;
+    }
+}
+
+@media (max-width: 880px) {
+    .icon7 {
+        left: 75%;
+    }
 }
 
 .page__links {
@@ -543,4 +605,21 @@ h6 {
 
 .link3:hover {
     transform: translateX(-20px);
+}
+
+.footer__icons {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+@media (max-width: 480px) {
+    .footer__icons {
+        display: flex;
+    }
+}
+
+.footer__icons img {
+    width: 40px;
 }
