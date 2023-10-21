@@ -14,13 +14,13 @@ html,
 body {
     height: 100%;
     min-width: 320px;
-    background-color: rgb(80, 75, 75);
+    background-color: rgb(211, 211, 211);
 }
 
 body {
     color: #FFFFFF;
     line-height: 1;
-    font-family: "Be+Vietnam+Pro";
+    font-family: "Sofia+Sans+Condensed";
     font-size: 1rem;
     font-weight: 600;
     -ms-text-size-adjust: 100%;
@@ -33,7 +33,7 @@ body {
 input,
 button,
 textarea {
-    font-family: "Be+Vietnam+Pro";
+    font-family: "Sofia+Sans+Condensed";
     font-size: inherit;
 }
 
@@ -97,7 +97,106 @@ h6 {
     padding: 0 0.9375rem;
 }
 
-.landing {
+#menu {
+    z-index: 2;
+}
+
+#menu-bar {
+    width: 60px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 10px;
+    width: 100%;
+    background-color: #DC052D;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav2 {
+    transition: 0.3s ease;
+    display: none;
+}
+
+.nav2 ul {
+    padding: 0 22px;
+}
+
+.nav2 li {
+    list-style: none;
+    padding: 12px 0;
+}
+
+.nav2 li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav2 li a:hover {
+    color: rgb(184, 183, 183);
+}
+
+.nav2 li a:hover {
+    font-weight: bold;
+}
+
+.menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #DC052D, #DC052D);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: white;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+    width: 400px;
+    height: 300px;
+    transform: translate(-60%, -30%);
+}
+
+.landing__box {
     margin-top: 12.5rem;
 }
 
@@ -124,6 +223,12 @@ h6 {
     }
 }
 
+@media (max-width: 887px) {
+    .landing__items {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
 .landing__item {
     position: relative;
     border: 1px solid black;
@@ -133,10 +238,12 @@ h6 {
 
 .landing__item:hover .hover-landing {
     left: 0;
+    visibility: visible;
 }
 
 .landing__item:hover .hover-landing2 {
     right: 0;
+    visibility: visible;
 }
 
 .landing__item:hover .landing__image {
@@ -171,6 +278,7 @@ h6 {
     position: absolute;
     top: 12%;
     left: -120%;
+    visibility: hidden;
     transition: all 0.4s ease 0s;
 }
 
@@ -178,6 +286,7 @@ h6 {
     position: absolute;
     top: 12%;
     right: -120%;
+    visibility: hidden;
     transition: all 0.4s ease 0s;
 }
 
@@ -194,10 +303,67 @@ h6 {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0.9375rem;
     background-color: rgb(23, 21, 21);
     color: rgb(232, 227, 227);
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
+}
+
+@media (min-width: 78.75em) {
+    .hover-landing__item {
+        padding: 0.9375rem;
+    }
+}
+
+@media (min-width: 20em) and (max-width: 78.75em) {
+    .hover-landing__item {
+        padding: calc(0.3125rem + 0.625 * (100vw - 20rem) / 58.75);
+    }
+}
+
+@media (max-width: 20em) {
+    .hover-landing__item {
+        padding: 0.3125rem;
+    }
+}
+
+@media (min-width: 78.75em) {
+    .hover-landing__item {
+        font-size: 1.0625rem;
+    }
+}
+
+@media (min-width: 20em) and (max-width: 78.75em) {
+    .hover-landing__item {
+        font-size: calc(0.5rem + 0.5625 * (100vw - 20rem) / 58.75);
+    }
+}
+
+@media (max-width: 20em) {
+    .hover-landing__item {
+        font-size: 0.5rem;
+    }
+}
+
+.hover-landing__item span {
+    color: rgb(174, 172, 172);
+}
+
+@media (min-width: 78.75em) {
+    .hover-landing__item span {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 20em) and (max-width: 78.75em) {
+    .hover-landing__item span {
+        font-size: calc(0.625rem + 0.625 * (100vw - 20rem) / 58.75);
+    }
+}
+
+@media (max-width: 20em) {
+    .hover-landing__item span {
+        font-size: 0.625rem;
+    }
 }
 
 .hover-item1 {
@@ -205,9 +371,21 @@ h6 {
     left: 10%;
 }
 
+@media (max-width: 850px) {
+    .hover-item1 {
+        left: 5%;
+    }
+}
+
 .hover-item2 {
     top: 40%;
     left: 23%;
+}
+
+@media (max-width: 850px) {
+    .hover-item2 {
+        left: 10%;
+    }
 }
 
 .hover-item3 {
@@ -215,7 +393,154 @@ h6 {
     left: 40%;
 }
 
+@media (max-width: 850px) {
+    .hover-item3 {
+        left: 30%;
+    }
+}
+
 .hover-item4 {
     top: 80%;
     left: 66%;
+}
+
+@media (max-width: 850px) {
+    .hover-item4 {
+        left: 50%;
+    }
+}
+
+.projects__box {
+    margin-top: 6.25rem;
+}
+
+.page {
+    background: url("../images/wallpaper.jpg") no-repeat center;
+    background-size: 100%;
+    position: relative;
+}
+
+@media (max-width: 900px) {
+    .page {
+        background-size: auto;
+    }
+}
+
+.screen {
+    position: absolute;
+    top: 10%;
+    left: 16%;
+    text-align: start;
+    padding: 0.9375rem;
+    max-width: 45rem;
+    line-height: 1.2;
+    color: white;
+    font-family: "Sofia+Sans+Condensed";
+}
+
+@media (min-width: 78.75em) {
+    .screen {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 20em) and (max-width: 78.75em) {
+    .screen {
+        font-size: calc(1rem + 0.5 * (100vw - 20rem) / 58.75);
+    }
+}
+
+@media (max-width: 20em) {
+    .screen {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .screen {
+        left: 5%;
+        top: 15%;
+    }
+}
+
+.page__icon {
+    position: absolute;
+}
+
+.icon1 {
+    top: 27%;
+    left: 10%;
+}
+
+.icon2 {
+    top: 62%;
+    left: 64%;
+}
+
+.icon3 {
+    top: 14%;
+    left: 48%;
+}
+
+.icon4 {
+    top: 72%;
+    left: 15%;
+}
+
+.icon5 {
+    top: 84%;
+    left: 48%;
+}
+
+.icon6 {
+    top: 71%;
+    left: 89%;
+}
+
+.icon7 {
+    top: 10%;
+    left: 71%;
+}
+
+.page__links {
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.page__link {
+    padding: 0.625rem;
+    width: 8.75rem;
+    transform: translateX(-50px);
+}
+
+.page__link img {
+    margin-left: 3.75rem;
+}
+
+.link1 {
+    background-color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.link1:hover {
+    transform: translateX(-20px);
+}
+
+.link2 {
+    background-color: rgb(5, 155, 237);
+    transition: all 0.3s ease 0s;
+}
+
+.link2:hover {
+    transform: translateX(-20px);
+}
+
+.link3 {
+    background-color: rgba(47, 127, 240, 0.908);
+    transition: all 0.3s ease 0s;
+}
+
+.link3:hover {
+    transform: translateX(-20px);
 }
