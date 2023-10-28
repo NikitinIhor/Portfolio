@@ -6,102 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Nikitin&#x27;s portfolio </title>
     <!-- 300light,500mid,600semiB    &display=swap   -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Sofia+Sans+Condensed:regular,500,600,700,800,900&display=swap" rel="stylesheet" />
     <!-- <script src="https://kit.fontawesome.com/319e7c7e7a.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
     
     
     <div class="wrapper">
-        <header class="header">
-          <div class="header__burger">
-            <div id="menu">
-              <div id="menu-bar" onclick="menuOnClick()">
-                <div id="bar1" class="bar"></div>
-                <div id="bar2" class="bar"></div>
-                <div id="bar3" class="bar"></div>
-              </div>
-              <nav class="nav2" id="nav2">
-                <ul>
-                  <li><a href="#">HOME</a></li>
-                  <li><a href="index_works.html">WORKS</a></li>
-                </ul>
-              </nav> 
+      <header class="header">
+        <div class="header__contacts">
+          <a href="tel:+48570642244" class="header__telephone">
+            <img src="assets/images/header/phone.png" width="30px" height="30px" alt="phone">
+            <div class="header__phone">+48 570-642-244</div>
+          </a>
+          <div class="header__logo"><span class="one">Nikitin's</span> <span class="two">Portfolio</span></div>
+          <a href="https://mail.google.com/mail/u/0/?hl=pl#inbox" class="header__email">
+            <img src="assets/images/header/mail.png" width="30px" alt="mail">
+            <div class="header__mail">nikitinigor0907@gmail.com</div>
+          </a>
+        </div>
+        <div class="header__burger">
+          <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
             </div>
-            <div class="menu-bg" id="menu-bg"></div>
+            <nav class="nav2" id="nav2">
+              <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="index_works.html">WORKS</a></li>
+              </ul>
+            </nav>
           </div>
-        </header>
-        <main class="page">
-            <div class="page__container">
-                <div class="screen">
-                    <pre> 
+          <div class="menu-bg" id="menu-bg"></div>
+        </div>
+      </header>
+      <main class="page">
+        <div class="page__container">
+          <div class="screen">
+            <pre>
                     </pre>
-                </div>
-                <div class="page__links">
-                  <div class="page__link link1">
-                    <a href="https://github.com/NikitinIhor"><img src="assets/images/links/github.png" width="48px" alt="github"></a>
-                  </div>
-                  <div class="page__link link2">
-                    <a href="https://www.facebook.com/igor.nikitin.73113/"><img src="assets/images/links/facebook.png" alt="facebook"></a>
-                  </div>
-                  <div class="page__link link3">
-                    <a href="https://www.linkedin.com/in/%D0%B8%D0%B3%D0%BE%D1%80%D1%8C-%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D0%BD-5b602b278/?originalSubdomain=pl"><img src="assets/images/links/linkedin.png" alt="linkedin"></a>
-                  </div>
-                </div>
-                <div class="page__icons">
-                  <div value="-3" class="page__icon icon1 par-effect">
-                    <img src="assets/images/icons/icons8-css-100.png" width="70px" alt="css">
-                  </div>
-                  <div value="2" class="page__icon icon2 par-effect">
-                    <img src="assets/images/icons/icons8-github-48.png" width="55px" alt="github">
-                  </div>
-                  <div value="-2" class="page__icon icon3 par-effect">
-                    <img src="assets/images/icons/icons8-gulp-64.png" width="40px" height="64px" alt="gulp">
-                  </div>
-                  <div value="4" class="page__icon icon4 par-effect">
-                    <img src="assets/images/icons/icons8-html-48.png" alt="html">
-                  </div>
-                  <div value="3" class="page__icon icon5 par-effect">
-                    <img src="assets/images/icons/icons8-javascript-48.png" alt="js">
-                  </div>
-                  <div value="-3" class="page__icon icon6 par-effect">
-                    <img src="assets/images/icons/icons8-react-js-40.png" alt="react">
-                  </div>
-                  <div value="-4" class="page__icon icon7 par-effect">
-                    <img src="assets/images/icons/icons8-sass-48.png" width="70px" alt="sass">
-                  </div>
-                </div>
+          </div>
+          <div class="page__links">
+            <div class="page__link link1">
+              <a href="https://github.com/NikitinIhor"><img src="assets/images/links/github.png" width="48px"
+                  alt="github"></a>
             </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__icons">
-              <div  class="footer__icon icon1">
-                <img src="assets/images/icons/icons8-css-100.png" width="70px" alt="css">
-              </div>
-              <div class="footer__icon icon2">
-                <img src="assets/images/icons/icons8-github-48.png" width="55px" alt="github">
-              </div>
-              <div  class="footer__icon icon3 footer__icon3">
-                <img src="assets/images/icons/icons8-gulp-64.png" width="40px" height="64px" alt="gulp">
-              </div>
-              <div class="footer__icon icon4">
-                <img src="assets/images/icons/icons8-html-48.png" alt="html">
-              </div>
-              <div class="footer__icon icon5">
-                <img src="assets/images/icons/icons8-javascript-48.png" alt="js">
-              </div>
-              <div  class="footer__icon icon6">
-                <img src="assets/images/icons/icons8-react-js-40.png" alt="react">
-              </div>
-              <div  class="footer__icon icon7">
-                <img src="assets/images/icons/icons8-sass-48.png" width="70px" alt="sass">
-              </div>
+            <div class="page__link link2">
+              <a href="https://www.facebook.com/igor.nikitin.73113/"><img src="assets/images/links/facebook.png"
+                  alt="facebook"></a>
             </div>
-        </footer>
+            <div class="page__link link3">
+              <a
+                href="https://www.linkedin.com/in/%D0%B8%D0%B3%D0%BE%D1%80%D1%8C-%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D0%BD-5b602b278/?originalSubdomain=pl"><img
+                  src="assets/images/links/linkedin.png" alt="linkedin"></a>
+            </div>
+          </div>
+          <div class="page__iconsOnStart">
+            <div class="page__iconsOnStart-body">
+            <div class="page__iconOnStart iconOnStart1">
+              <img src="assets/images/icons/icons8-css-100.png" width="70px" alt="css">
+            </div>
+            <di class="page__iconOnStart iconOnStart2">
+              <img src="assets/images/icons/icons8-github-48.png" width="55px" alt="github">
+            </di>
+            <div class="page__iconOnStart iconOnStart3">
+              <img src="assets/images/icons/icons8-gulp-64.png" width="40px" height="64px" alt="gulp">
+            </div>
+            <di class="page__iconOnStart iconOnStart4">
+              <img src="assets/images/icons/icons8-html-48.png" alt="html">
+            </di>
+            <di class="page__iconOnStart iconOnStart5">
+              <img src="assets/images/icons/icons8-javascript-48.png" alt="js">
+            </di>
+            <div class="page__iconOnStart iconOnStart6">
+              <img src="assets/images/icons/icons8-react-js-40.png" alt="react">
+            </div>
+            <div class="page__iconOnStart iconOnStart7">
+              <img src="assets/images/icons/icons8-sass-48.png" width="70px" alt="sass">
+            </div>
+          </div>
+          </div>
+          <div class="page__icons">
+            <div value="-3" class="page__icon icon1 par-effect">
+              <img src="assets/images/icons/icons8-css-100.png" width="70px" alt="css">
+            </div>
+            <div value="2" class="page__icon icon2 par-effect">
+              <img src="assets/images/icons/icons8-github-48.png" width="55px" alt="github">
+            </div>
+            <div value="-2" class="page__icon icon3 par-effect">
+              <img src="assets/images/icons/icons8-gulp-64.png" width="40px" height="64px" alt="gulp">
+            </div>
+            <div value="4" class="page__icon icon4 par-effect">
+              <img src="assets/images/icons/icons8-html-48.png" alt="html">
+            </div>
+            <div value="3" class="page__icon icon5 par-effect">
+              <img src="assets/images/icons/icons8-javascript-48.png" alt="js">
+            </div>
+            <div value="-3" class="page__icon icon6 par-effect">
+              <img src="assets/images/icons/icons8-react-js-40.png" alt="react">
+            </div>
+            <div value="-4" class="page__icon icon7 par-effect">
+              <img src="assets/images/icons/icons8-sass-48.png" width="70px" alt="sass">
+            </div>
+          </div>
+          <a href="index_works.html" class="page__arrow">
+            <div class="arrow__text">ALL WORKS</div>
+            <div class="arrow__image">
+              <img src="assets/images/arrow.png" width="100px" height="100px" alt="arrow">
+            </div>
+          </a>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__icons">
+          <div class="footer__icon icon1">
+            <img src="assets/images/icons/icons8-css-100.png" width="70px" alt="css">
+          </div>
+          <div class="footer__icon icon2">
+            <img src="assets/images/icons/icons8-github-48.png" width="55px" alt="github">
+          </div>
+          <div class="footer__icon icon3 footer__icon3">
+            <img src="assets/images/icons/icons8-gulp-64.png" width="40px" height="64px" alt="gulp">
+          </div>
+          <div class="footer__icon icon4">
+            <img src="assets/images/icons/icons8-html-48.png" alt="html">
+          </div>
+          <div class="footer__icon icon5">
+            <img src="assets/images/icons/icons8-javascript-48.png" alt="js">
+          </div>
+          <div class="footer__icon icon6">
+            <img src="assets/images/icons/icons8-react-js-40.png" alt="react">
+          </div>
+          <div class="footer__icon icon7">
+            <img src="assets/images/icons/icons8-sass-48.png" width="70px" alt="sass">
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/burger1.js"></script>
     <!-- <script src="assets/js/catalog.js"></script> -->
     <script src="assets/js/dynamic_adapt.js"></script>
     <!-- <script src="assets/js/tabs.js"></script> -->

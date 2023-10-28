@@ -5,35 +5,119 @@ i love to learn to get better...\n\
 let line = 0
 let count = 0
 let result = ''
-let resultBig = ''
+
 const pre = document.querySelector('pre')
 
 const typeText = () => {
-  const interval = setInterval(() => {
-    result+=text[line][count]
-    pre.innerHTML = result + '|'
-    count ++
-    if(count>= text[line]. length){
-      count=0
-      line ++
-    }
-    if(line == text.length){
-      clearInterval(interval)
-      pre.innerHTML = result
-      return true
-    }
-  }, 70);
+  setTimeout(() => {
+    const interval = setInterval(() => {
+      result+=text[line][count]
+      pre.innerHTML = result + '|'
+      count ++
+      if(count>= text[line]. length){
+        count=0
+        line ++
+      }
+      if(line == text.length){
+        clearInterval(interval)
+        pre.innerHTML = result
+        return true
+      }
+    }, 70);
+  }, 5500);
   };
 
 typeText()
+// ------------------------------------------------------
 
+const header = document.querySelector('.arrow__text');
+const arrow = document.querySelector('.arrow__image');
 
+let colors = '0123456789ABCDEF'
+let randomColor = '#'
 
+const generateColor = () => {
+  setInterval(() => {
+    for(let i = 0;i<6;i++){
+      randomColor+=colors[Math.floor(Math.random()*colors.length)]
+    }
+    header.style.color = randomColor
+    randomColor='#'
+  }, 300);
+};
+generateColor()
 
+const arrowChange = () => {
+    setInterval(() => {
+      arrow.classList.toggle('arrowUp')
+    }, 300);
+};
+arrowChange()
+// ---------------------------------------------------
 
+const span1 = document.querySelector('.one');
+const span2 = document.querySelector('.two');
 
-function menuOnClick() {
-  document.getElementById("menu-bar").classList.toggle("change");
-  document.getElementById("nav2").classList.toggle("change");
-  document.getElementById("menu-bg").classList.toggle("change-bg");
-}
+const textColor = () => {
+setTimeout(() => {
+  span1.classList.add('show-one')
+}, 4500);
+setTimeout(() => {
+  span2.classList.add('show-two')
+}, 4000);
+};
+
+textColor()
+// --------------------------------------------------
+const page = document.querySelector('.page');
+const icons = document.querySelector('.page__icons');
+const arrowShow = document.querySelector('.page__arrow ');
+const link1 = document.querySelector('.link1');
+const link2 = document.querySelector('.link2');
+const link3 = document.querySelector('.link3');
+const iconOnStart = document.querySelector('.page__iconsOnStart');
+
+const iconOnStart1 = document.querySelector('.iconOnStart1');
+const iconOnStart2 = document.querySelector('.iconOnStart2');
+const iconOnStart3 = document.querySelector('.iconOnStart3');
+const iconOnStart4 = document.querySelector('.iconOnStart4');
+const iconOnStart5 = document.querySelector('.iconOnStart5');
+const iconOnStart6 = document.querySelector('.iconOnStart6');
+const iconOnStart7 = document.querySelector('.iconOnStart7');
+
+const mail = document.querySelector('.header__email');
+const telefon = document.querySelector('.header__telephone');
+const burger = document.querySelector('#menu');
+
+(function() {
+  setTimeout(() => {
+    iconOnStart.style.display = 'none'
+  },6000);
+  setTimeout(() => {
+    page.classList.add('show__background')
+    icons.classList.add('show__icons')
+    
+  }, 5500);
+  setTimeout(() => {
+    iconOnStart1.classList.add('iconOnStart1-move')
+    iconOnStart2.classList.add('iconOnStart2-move')
+    iconOnStart3.classList.add('iconOnStart3-move')
+    iconOnStart4.classList.add('iconOnStart4-move')
+    iconOnStart5.classList.add('iconOnStart5-move')
+    iconOnStart6.classList.add('iconOnStart6-move')
+    iconOnStart7.classList.add('iconOnStart7-move')
+  }, 3500);
+  setTimeout(() => {
+    link1.classList.add('link1-show')
+    link2.classList.add('link2-show')
+    link3.classList.add('link3-show')
+
+    burger.classList.add('burger-show')
+  }, 4000);
+  setTimeout(() => {
+    arrowShow.classList.add('page__arrow-show')
+
+    mail.classList.add('show__mail-tel')
+    telefon.classList.add('show__mail-tel')
+  }, 5000);
+})();
