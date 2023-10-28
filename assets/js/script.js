@@ -89,9 +89,12 @@ const mail = document.querySelector('.header__email');
 const telefon = document.querySelector('.header__telephone');
 const burger = document.querySelector('#menu');
 
+const footerIcons = document.querySelector('.footer__icons');
+
 (function() {
   setTimeout(() => {
     iconOnStart.style.display = 'none'
+    footerIcons.classList.add('footer__icons-show')
   },6000);
   setTimeout(() => {
     page.classList.add('show__background')
@@ -121,3 +124,19 @@ const burger = document.querySelector('#menu');
     telefon.classList.add('show__mail-tel')
   }, 5000);
 })();
+// --------------------------------------------------
+const loading = document.querySelector('.loading');
+let second = 0
+
+const load = () => {
+setInterval(() => {
+  if(second<100){
+    second++
+    loading.textContent = `${second}%`
+  }
+}, 30);
+setTimeout(() => {
+  loading.classList.add('loading-hide')
+}, 3200);
+};
+load()

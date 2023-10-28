@@ -808,6 +808,54 @@ h6 {
     position: relative;
 }
 
+@media (max-width: 800px) {
+    .page__iconsOnStart-body {
+        transform: translateX(-50px);
+    }
+}
+
+.loading {
+    font-size: 2.1875rem;
+    padding-left: 2.5rem;
+    transform: translateY(-20px);
+}
+
+@media (max-width: 800px) {
+    .loading {
+        padding-left: 0rem;
+    }
+}
+
+.loading-hide {
+    opacity: 0;
+    visibility: hidden;
+    animation: loading-hide linear 2.5s;
+}
+
+@keyframes loading-hide {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    25% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 .page__iconOnStart {
     position: absolute;
     animation: rotate 2s infinite linear;
@@ -1226,12 +1274,6 @@ h6 {
     background-color: black;
 }
 
-@media (max-width: 480px) {
-    .footer__icons {
-        display: flex;
-    }
-}
-
 .footer__icons img {
     width: 40px;
 }
@@ -1239,4 +1281,10 @@ h6 {
 .footer__icons .footer__icon3 img {
     width: 30px;
     height: 40px;
+}
+
+@media (max-width: 480px) {
+    .footer__icons-show {
+        display: flex;
+    }
 }
