@@ -11,21 +11,21 @@ const pre = document.querySelector('pre')
 const typeText = () => {
   setTimeout(() => {
     const interval = setInterval(() => {
-      result+=text[line][count]
+      result += text[line][count]
       pre.innerHTML = result + '|'
-      count ++
-      if(count>= text[line]. length){
-        count=0
-        line ++
+      count++
+      if (count >= text[line].length) {
+        count = 0
+        line++
       }
-      if(line == text.length){
+      if (line == text.length) {
         clearInterval(interval)
         pre.innerHTML = result
         return true
       }
-    }, 70);
+    }, 40);
   }, 5500);
-  };
+};
 
 typeText()
 // ------------------------------------------------------
@@ -38,19 +38,19 @@ let randomColor = '#'
 
 const generateColor = () => {
   setInterval(() => {
-    for(let i = 0;i<6;i++){
-      randomColor+=colors[Math.floor(Math.random()*colors.length)]
+    for (let i = 0; i < 6; i++) {
+      randomColor += colors[Math.floor(Math.random() * colors.length)]
     }
     header.style.color = randomColor
-    randomColor='#'
+    randomColor = '#'
   }, 300);
 };
 generateColor()
 
 const arrowChange = () => {
-    setInterval(() => {
-      arrow.classList.toggle('arrowUp')
-    }, 300);
+  setInterval(() => {
+    arrow.classList.toggle('arrowUp')
+  }, 300);
 };
 arrowChange()
 // ---------------------------------------------------
@@ -59,12 +59,12 @@ const span1 = document.querySelector('.one');
 const span2 = document.querySelector('.two');
 
 const textColor = () => {
-setTimeout(() => {
-  span1.classList.add('show-one')
-}, 4500);
-setTimeout(() => {
-  span2.classList.add('show-two')
-}, 4000);
+  setTimeout(() => {
+    span1.classList.add('show-one')
+  }, 4500);
+  setTimeout(() => {
+    span2.classList.add('show-two')
+  }, 4000);
 };
 
 textColor()
@@ -91,15 +91,15 @@ const burger = document.querySelector('#menu');
 
 const footerIcons = document.querySelector('.footer__icons');
 
-(function() {
+(function () {
   setTimeout(() => {
     iconOnStart.style.display = 'none'
     footerIcons.classList.add('footer__icons-show')
-  },6000);
+  }, 6000);
   setTimeout(() => {
     page.classList.add('show__background')
     icons.classList.add('show__icons')
-    
+
   }, 5500);
   setTimeout(() => {
     iconOnStart1.classList.add('iconOnStart1-move')
@@ -129,14 +129,112 @@ const loading = document.querySelector('.loading');
 let second = 0
 
 const load = () => {
-setInterval(() => {
-  if(second<100){
-    second++
-    loading.textContent = `${second}%`
-  }
-}, 30);
-setTimeout(() => {
-  loading.classList.add('loading-hide')
-}, 3200);
+  setInterval(() => {
+    if (second < 100) {
+      second++
+      loading.textContent = `${second}%`
+    }
+    switch (second) {
+      case 20:
+        loading.style.color = 'pink'
+        break;
+      case 40:
+        loading.style.color = 'yellow'
+        break;
+      case 60:
+        loading.style.color = 'greenyellow'
+        break;
+      case 80:
+        loading.style.color = 'green'
+        break;
+      default:
+        break;
+    }
+  }, 30);
+  setTimeout(() => {
+    loading.classList.add('loading-hide')
+  }, 3200);
 };
 load()
+// -----------------------------------------------------------
+const pageArrow = document.querySelector('.page__arrow');
+
+pageArrow.addEventListener('click', () => {
+
+  burger.classList.add('burger-hide')
+  document.getElementById("menu-bar").classList.remove("change");
+  document.getElementById("nav2").classList.remove("change");
+  document.getElementById("menu-bg").classList.remove("change-bg");
+
+  setTimeout(() => {
+    link1.classList.remove('link1-show')
+    link2.classList.remove('link2-show')
+    link3.classList.remove('link3-show')
+    link1.classList.add('link-hide')
+    link2.classList.add('link-hide')
+    link3.classList.add('link-hide')
+
+    arrowShow.classList.add('page__arrow-hide')
+
+    mail.classList.remove('show__mail-tel')
+    telefon.classList.remove('show__mail-tel')
+    span1.classList.remove('show-one')
+    span2.classList.remove('show-two')
+
+    icons.classList.remove('show__icons')
+
+    pre.classList.add('page__arrow-hide')
+
+    pageArrow.classList.remove('isDisabled')
+  }, 500);
+
+  setTimeout(() => {
+    page.classList.remove('show__background')
+  }, 1800);
+
+  setTimeout(() => {
+    window.location = 'index_works.html'
+  }, 2000);
+
+})
+// -----------------------------------------------------------
+const burgerWorks = document.querySelector('.show-my-works');
+
+burgerWorks.addEventListener('click', () => {
+
+  burger.classList.add('burger-hide')
+  document.getElementById("menu-bar").classList.remove("change");
+  document.getElementById("nav2").classList.remove("change");
+  document.getElementById("menu-bg").classList.remove("change-bg");
+
+  setTimeout(() => {
+    link1.classList.remove('link1-show')
+    link2.classList.remove('link2-show')
+    link3.classList.remove('link3-show')
+    link1.classList.add('link-hide')
+    link2.classList.add('link-hide')
+    link3.classList.add('link-hide')
+
+    arrowShow.classList.add('page__arrow-hide')
+
+    mail.classList.remove('show__mail-tel')
+    telefon.classList.remove('show__mail-tel')
+    span1.classList.remove('show-one')
+    span2.classList.remove('show-two')
+
+    icons.classList.remove('show__icons')
+
+    pre.classList.add('page__arrow-hide')
+
+    pageArrow.classList.remove('isDisabled')
+  }, 500);
+
+  setTimeout(() => {
+    page.classList.remove('show__background')
+  }, 1800);
+
+  setTimeout(() => {
+    window.location = 'index_works.html'
+  }, 2000);
+
+})
