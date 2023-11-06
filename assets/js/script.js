@@ -198,9 +198,22 @@ pageArrow.addEventListener('click', () => {
 
 })
 // -----------------------------------------------------------
-const burgerWorks = document.querySelector('.show-my-works');
 
-burgerWorks.addEventListener('click', () => {
+const menu = document.querySelector('.works-list1');
+
+const chengePage = (e) => {
+  let page = e.target
+  
+  if(page.classList.contains('show-my-works')){
+    setTimeout(() => {
+      window.location = 'index_works.html'
+    }, 2000);
+  }
+  if(page.classList.contains('show-my-contacts')){
+    setTimeout(() => {
+      window.location = 'index_contacts.html'
+    }, 2000);
+  }
 
   burger.classList.add('burger-hide')
   document.getElementById("menu-bar").classList.remove("change");
@@ -232,9 +245,6 @@ burgerWorks.addEventListener('click', () => {
   setTimeout(() => {
     page.classList.remove('show__background')
   }, 1800);
+};
 
-  setTimeout(() => {
-    window.location = 'index_works.html'
-  }, 2000);
-
-})
+menu.addEventListener('click', chengePage)

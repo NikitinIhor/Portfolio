@@ -102,7 +102,7 @@ const checkInputMessage = () => {
 const nextBtnClickEmail = () => {
     formMail.textContent = input.value
     clean()
-    input.placeholder = 'now write your message'
+    input.placeholder = 'write your message'
     formIcon.src = 'assets/images/form/text.png'
 
     input.removeEventListener('keyup', checkInputEmail)
@@ -138,3 +138,41 @@ input.addEventListener('keyup', checkInputName)
 next.addEventListener('click', nextBtnClickName)
 
 submit.addEventListener('click', sendMessage)
+
+// ---------------------------------------------------------
+const menu3 = document.querySelector('.works-list3');
+const burger3 = document.querySelector('.header__burger');
+
+const content = document.querySelector('.contacts__content');
+const formLeft = document.querySelector('.form__left');
+const formRight = document.querySelector('.form__right');
+const contactsFooter = document.querySelector('.contacts__container');
+
+const chengePage3 = (e) => {
+    let page3 = e.target
+
+    burger3.classList.add('burger2-hide')
+    document.getElementById("menu-bar2").classList.toggle("change");
+    document.getElementById("nav2").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+
+    content.classList.add('contacs-hide')
+    formLeft.classList.add('contacs-hide')
+    formRight.classList.add('contacs-hide')
+    contactsFooter.classList.add('contacs-hide')
+
+
+
+    if (page3.classList.contains('returnHome2')) {
+        setTimeout(() => {
+            window.location = 'index.html'
+        }, 1500);
+    }
+    if (page3.classList.contains('show-my-works2')) {
+        setTimeout(() => {
+            window.location = 'index_works.html'
+        }, 1500);
+    }
+}
+
+menu3.addEventListener('click', chengePage3)

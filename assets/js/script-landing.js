@@ -7,7 +7,22 @@ const burger = document.querySelector('#menu');
 const headerIcons = document.querySelectorAll('.header__icon-works');
 const landingTitle = document.querySelector('.landing__title');
 
-returnHome.addEventListener('click', ()=> {
+const menu2 = document.querySelector('.works-list2');
+
+const chengePage2 = (e) => {
+    let page2 = e.target
+
+    if (page2.classList.contains('returnHome')) {
+        setTimeout(() => {
+            window.location = 'index.html'
+        }, 1500);
+    }
+    if (page2.classList.contains('show-my-contacts')) {
+        setTimeout(() => {
+            window.location = 'index_contacts.html'
+        }, 1500);
+    }
+
     landingItems.forEach(item => {
         item.classList.add('hide-landing__item')
     });
@@ -25,12 +40,7 @@ returnHome.addEventListener('click', ()=> {
     headerTel.classList.add('burger2-hide')
     headerEmail.classList.add('burger2-hide')
     headerLogo.classList.add('burger2-hide')
-
-    setTimeout(() => {
-        window.location = 'index.html'
-      }, 1500);
-    
-})
+};
 // --------------------------------------------------
 const headerLogoChenge = () => {
     setTimeout(() => {
@@ -39,3 +49,5 @@ const headerLogoChenge = () => {
     }, 500);
 };
 headerLogoChenge()
+
+menu2.addEventListener('click', chengePage2 )

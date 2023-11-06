@@ -1788,6 +1788,28 @@ h6 {
     }
 }
 
+.returnHome2 {
+    padding-left: 2.1875rem;
+}
+
+.contacs-hide {
+    opacity: 0;
+    visibility: hidden;
+    animation: contacs-hide linear 1.5s;
+}
+
+@keyframes contacs-hide {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 .header__contacts {
     background-color: rgb(33, 32, 32);
 }
@@ -2140,6 +2162,16 @@ h6 {
 @media (max-width: 550px) {
     .input {
         width: 6.25rem;
+    }
+
+    .input::-moz-placeholder {
+        font-size: 0.625rem;
+        color: white;
+    }
+
+    .input::placeholder {
+        font-size: 0.625rem;
+        color: white;
     }
 }
 
