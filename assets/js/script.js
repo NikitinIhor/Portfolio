@@ -95,6 +95,11 @@ const footerIcons = document.querySelector('.footer__icons');
   setTimeout(() => {
     iconOnStart.style.display = 'none'
     footerIcons.classList.add('footer__icons-show')
+    
+    footerIcon.forEach(icon => {
+      icon.classList.add('footer__icons-show')
+    });
+
   }, 6000);
   setTimeout(() => {
     page.classList.add('show__background')
@@ -159,6 +164,8 @@ load()
 // -----------------------------------------------------------
 const pageArrow = document.querySelector('.page__arrow');
 
+const footerIcon = document.querySelectorAll('.footer__icon');
+
 pageArrow.addEventListener('click', () => {
 
   burger.classList.add('burger-hide')
@@ -186,6 +193,12 @@ pageArrow.addEventListener('click', () => {
     pre.classList.add('page__arrow-hide')
 
     pageArrow.classList.remove('isDisabled')
+
+    footerIcon.forEach(icon => {
+      icon.classList.remove('footer__icons-show')
+      icon.classList.add('footer__icons-hide')
+    });
+
   }, 500);
 
   setTimeout(() => {
@@ -213,7 +226,7 @@ const chengePage = (e) => {
     setTimeout(() => {
       window.location = 'index_contacts.html'
     }, 2000);
-  }
+  } 
 
   burger.classList.add('burger-hide')
   document.getElementById("menu-bar").classList.remove("change");
@@ -229,7 +242,7 @@ const chengePage = (e) => {
     link3.classList.add('link-hide')
 
     arrowShow.classList.add('page__arrow-hide')
-
+    
     mail.classList.remove('show__mail-tel')
     telefon.classList.remove('show__mail-tel')
     span1.classList.remove('show-one')
@@ -240,7 +253,13 @@ const chengePage = (e) => {
     pre.classList.add('page__arrow-hide')
 
     pageArrow.classList.remove('isDisabled')
+
   }, 500);
+
+  footerIcon.forEach(icon => {
+    icon.classList.remove('footer__icons-show')
+    icon.classList.add('footer__icons-hide')
+  });
 
   setTimeout(() => {
     page.classList.remove('show__background')

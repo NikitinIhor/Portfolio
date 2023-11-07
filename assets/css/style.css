@@ -2468,7 +2468,7 @@ h6 {
     display: none;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: rgb(33, 32, 32);
 }
 
 .footer__icons img {
@@ -2482,24 +2482,47 @@ h6 {
 
 .footer__icons-works {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.25rem 3.125rem;
-    background-color: black;
-}
-
-.footer__icons-works img {
-    width: 40px;
-}
-
-.footer__icons-works .footer__icon3 img {
-    width: 30px;
-    height: 40px;
 }
 
 .footer__icons-works .icon3-works img {
     width: 40px;
     height: 50px;
+}
+
+.footer__icons-hide {
+    visibility: hidden;
+    opacity: 0;
+    animation: footer__icons-hide linear 1.5s;
+}
+
+@keyframes footer__icons-hide {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.footer__icons-show {
+    visibility: visible;
+    opacity: 1;
+    animation: footer__icons-show linear 1.5s;
+}
+
+@keyframes footer__icons-show {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .footer__icon-works img {
