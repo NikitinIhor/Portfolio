@@ -2165,12 +2165,12 @@ h6 {
     }
 
     .input::-moz-placeholder {
-        font-size: 0.625rem;
+        font-size: 0.5625rem;
         color: white;
     }
 
     .input::placeholder {
-        font-size: 0.625rem;
+        font-size: 0.5625rem;
         color: white;
     }
 }

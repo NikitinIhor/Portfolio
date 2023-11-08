@@ -60,7 +60,7 @@ const sendMessage = () => {
     setTimeout(() => {
         formName.textContent = 'MESSAGE SEND !!!'
         formName.style.color = 'green'
-        formName.style.fontSize = '60px'
+        formName.style.fontSize = '40px'
     }, 5400);
     setTimeout(() => {
         input.placeholder = 'Fill with your name'
