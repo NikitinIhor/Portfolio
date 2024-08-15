@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(35, 35, 35);
+  height: 65px;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+.link {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  letter-spacing: 0.05em;
+}
+.link:hover {
+  color: rgb(245, 74, 74);
+}
+.isActive {
+  color: rgb(245, 74, 74);
+  text-decoration: underline;
+}
