@@ -1,5 +1,8 @@
 .wrapper {
-  background: url("../../images/wallpaper.jpg") no-repeat center;
+  background: url("../../images/wallpaper.jpg") no-repeat center top 30%;
   background-size: cover;
   height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
 }
