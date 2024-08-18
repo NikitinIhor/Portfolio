@@ -1,8 +1,13 @@
 .wrapper {
-  padding-top: 100px;
+  padding-top: 60px;
   padding-left: 100px;
   background-color: rgb(48, 46, 46);
   height: 100vh;
+}
+@media screen and (max-width: 925px) {
+  .wrapper {
+    padding-left: 20px;
+  }
 }
 .title {
   color: white;
@@ -26,20 +31,21 @@
 
 .email {
   position: absolute;
-  top: 207px;
-  left: 560px;
+  top: 245px;
+  left: 125px;
   font-size: 20px;
   letter-spacing: 0.03em;
   color: rgb(248, 35, 35);
   transition: all 0.6s ease;
   transition: opacity 1s ease-out;
 }
+
 .email:hover {
   text-decoration: underline;
 }
 .socials {
   position: absolute;
-  right: 0;
+  right: 1%;
   top: 30%;
   transition: opacity 1s ease-out;
 }
@@ -81,4 +87,35 @@
 .btn:hover {
   box-shadow: 2px 2px 5px rgb(255, 255, 255);
   font-size: 22px;
+}
+@media screen and (max-width: 925px) {
+  .email {
+    top: 192px;
+    left: 45px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .socials {
+    overflow: hidden;
+  }
+  .link {
+    width: 60px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 460px) {
+  .email {
+    top: 180px;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    top: 50%;
+    left: 0;
+  }
+  .email {
+    left: 80px;
+  }
 }

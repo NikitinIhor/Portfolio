@@ -1,5 +1,4 @@
 .wrapper {
-  width: 850px;
   color: white;
   padding: 20px 0 0 25px;
 }
@@ -20,14 +19,13 @@
     font-size: 12px;
   }
 }
-@media screen and (max-width: 720px) {
-  .wrapper {
-    text-align: center;
-  }
-}
+
 @media screen and (max-width: 460px) {
   .text {
-    font-size: 9px;
+    font-size: 10px;
+  }
+  .wrapper {
+    text-align: center;
   }
   .title {
     font-size: 22px;

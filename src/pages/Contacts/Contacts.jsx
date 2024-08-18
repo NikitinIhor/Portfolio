@@ -9,8 +9,11 @@ import css from "./Contacts.module.css";
 
 const text = `Get in touch &
 
-If you wanna get in touch, talk to me about a project collaboration or just say hi,
-fill up the form below or send an email to                              and 
+If you wanna get in touch,
+talk to me about a project collaboration
+or just say hi,
+fill up the form below or send an email to
+             
 ~let's talk..`;
 
 export default function Contacts() {
