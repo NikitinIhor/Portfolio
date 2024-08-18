@@ -27,7 +27,7 @@ export default function Contacts() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShow(true);
-    }, 7000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -72,9 +72,11 @@ export default function Contacts() {
           </Social>
         </div>
       )}
-      <button onClick={openAddModal} className={css.btn}>
-        ~let's talk
-      </button>
+      {show && (
+        <button onClick={openAddModal} className={css.btn}>
+          ~let's talk
+        </button>
+      )}
       <AddModal closeAddModal={closeAddModal} addModalIsopen={addModalIsopen} />
     </div>
   );

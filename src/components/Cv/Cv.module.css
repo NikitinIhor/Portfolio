@@ -46,3 +46,16 @@
   left: 50px;
   animation: animation 1s infinite alternate;
 }
+@media screen and (max-width: 720px) {
+  .cv {
+    top: 60%;
+    right: 35%;
+  }
+  .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .image {
+    top: 10px;
+  }
+}

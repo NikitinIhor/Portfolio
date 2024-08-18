@@ -13,9 +13,11 @@ and engaging web applications and sites.
 
 export default function Home() {
   return (
-    <div className={css.wrapper}>
-      <TypingEffect text={text} />
-      <Cv />
+    <div className={css.container}>
+      <div className={css.wrapper}>
+        <TypingEffect text={text} />
+        <Cv />
+      </div>
     </div>
   );
 }

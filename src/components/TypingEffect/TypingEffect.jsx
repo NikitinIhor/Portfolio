@@ -10,7 +10,7 @@ export default function TypingEffect({ text }) {
       const interval = setInterval(() => {
         setResult((prev) => prev + text[index]);
         setIndex((prevIndex) => prevIndex + 1);
-      }, 40);
+      }, 10);
 
       return () => clearInterval(interval);
     }
