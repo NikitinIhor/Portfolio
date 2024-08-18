@@ -112,11 +112,14 @@
     display: flex;
     justify-content: center;
     gap: 40px;
-    top: 60%;
+    top: 50%;
     left: 0;
   }
   .email {
     top: 212px;
     left: 80px;
+  }
+  .btn {
+    top: 80%;
   }
 }
