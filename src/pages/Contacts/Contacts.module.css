@@ -90,7 +90,7 @@
 }
 @media screen and (max-width: 925px) {
   .email {
-    top: 192px;
+    top: 230px;
     left: 45px;
     font-size: 14px;
   }
@@ -112,10 +112,11 @@
     display: flex;
     justify-content: center;
     gap: 40px;
-    top: 50%;
+    top: 60%;
     left: 0;
   }
   .email {
+    top: 212px;
     left: 80px;
   }
 }
