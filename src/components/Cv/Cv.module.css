@@ -48,8 +48,10 @@
 }
 @media screen and (max-width: 720px) {
   .cv {
-    top: 60%;
-    right: 35%;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .title {
     font-size: 18px;
@@ -61,7 +63,7 @@
 }
 @media screen and (max-width: 460px) {
   .cv {
-    top: 55%;
+    top: 65%;
     right: 20%;
   }
 }
