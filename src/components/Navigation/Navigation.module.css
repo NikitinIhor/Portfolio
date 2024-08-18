@@ -36,3 +36,11 @@
   width: 100%;
   height: 2px;
 }
+@media screen and (max-width: 460px) {
+  .link {
+    font-size: 18px;
+  }
+  .header {
+    height: 50px;
+  }
+}

@@ -59,3 +59,9 @@
     top: 10px;
   }
 }
+@media screen and (max-width: 460px) {
+  .cv {
+    top: 55%;
+    right: 20%;
+  }
+}

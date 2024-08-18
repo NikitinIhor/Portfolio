@@ -46,7 +46,7 @@ export default function Footer() {
                 [css.hidden]: !icons.html,
               })}
             >
-              <FaHtml5 /> HTML
+              <FaHtml5 /> <span>HTML</span>
             </div>
             <div
               className={clsx(css.icon, {
@@ -54,7 +54,7 @@ export default function Footer() {
                 [css.hidden]: !icons.css,
               })}
             >
-              <FaCss3Alt /> CSS
+              <FaCss3Alt /> <span>CSS</span>
             </div>
             <div
               className={clsx(css.icon, {
@@ -62,7 +62,7 @@ export default function Footer() {
                 [css.hidden]: !icons.js,
               })}
             >
-              <FaJs /> JS
+              <FaJs /> <span>JS</span>
             </div>
             <div
               className={clsx(css.icon, {
@@ -70,7 +70,7 @@ export default function Footer() {
                 [css.hidden]: !icons.react,
               })}
             >
-              <FaReact /> REACT
+              <FaReact /> <span>REACT</span>
             </div>
             <div
               className={clsx(css.icon, {
@@ -78,7 +78,7 @@ export default function Footer() {
                 [css.hidden]: !icons.redux,
               })}
             >
-              <SiRedux /> REDUX
+              <SiRedux /> <span>REDUX</span>
             </div>
             <div
               className={clsx(css.icon, {
@@ -86,7 +86,7 @@ export default function Footer() {
                 [css.hidden]: !icons.ts,
               })}
             >
-              <SiTypescript /> TS
+              <SiTypescript /> <span>TS</span>
             </div>
             <div
               className={clsx(css.icon, {
@@ -94,7 +94,7 @@ export default function Footer() {
                 [css.hidden]: !icons.github,
               })}
             >
-              <FaGithub /> GITHUB
+              <FaGithub /> <span>GITHUB</span>
             </div>
           </>
         )}
