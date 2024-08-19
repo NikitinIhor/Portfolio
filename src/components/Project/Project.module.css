@@ -28,11 +28,12 @@
 .item:hover .sub {
   color: rgb(239, 24, 24);
 }
-.skills span,
-.description span {
+.span {
   font-weight: 600;
   color: black;
+  display: block;
 }
+
 .skills {
   margin-bottom: 20px;
 }

@@ -18,10 +18,10 @@ export default function Project({
         <img className={css.image} src={image} alt={alt} />
         <p className={css.sub}>{subtitle}</p>
         <p className={css.skills}>
-          <span>Skills i used:</span> ({skills})
+          <span className={css.span}>Skills i used:</span> ({skills})
         </p>
         <p className={css.description}>
-          <span>Description:</span> {description}
+          <span className={css.span}>Description:</span> {description}
         </p>
       </a>
     </div>
