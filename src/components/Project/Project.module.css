@@ -1,0 +1,38 @@
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  color: rgb(97, 97, 97);
+}
+
+.item:hover .image {
+  transform: scale(1.04);
+}
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: black;
+}
+.image {
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px black;
+  margin-bottom: 20px;
+  transition: all ease 0.6s;
+}
+.sub {
+  text-align: end;
+  font-weight: 600;
+  margin-bottom: 24px;
+  transition: all ease 0.6s;
+}
+.item:hover .sub {
+  color: rgb(239, 24, 24);
+}
+.skills span,
+.description span {
+  font-weight: 600;
+  color: black;
+}
+.skills {
+  margin-bottom: 20px;
+}
