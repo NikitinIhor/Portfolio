@@ -7,9 +7,20 @@ import mygym from "../src/images/projects/gym.png";
 import organic from "../src/images/projects/organic.png";
 import hello from "../src/images/projects/hello.png";
 import wallet from "../src/images/projects/wallet.png";
+import pizzaMaker from "../src/images/projects/pizzaMaker.png";
 
 
 export const DATA = [
+    {
+        id: 0,
+        title: "PizzaMaker",
+        subtitle: "Personal project",
+        skills: "React.js, Responsive Design, JavaScript (ES6+), CSS3, Animations, UI/UX Design, Version Control",
+        image: pizzaMaker,
+        alt: "multikino",
+        description: "An interactive web app where users can customize their pizza by choosing different halves, each with its own price. After selecting, the order is animated into the cart, where users can either finalize the purchase or cancel. The app offers a fun and easy way to create and manage custom pizza orders.",
+        url: "https://pizzamaker-six.vercel.app/",
+    },
     {
         id: 1,
         title: "MultiKino",
