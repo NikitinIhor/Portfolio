@@ -14,7 +14,7 @@ import weatherDashboard from "../src/images/projects/weatherDashboard.png";
 export const DATA = [
     {
         id: 0,
-        title: "Weather-Dashboard-application",
+        title: "Weather application",
         subtitle: "Personal project",
         skills: "React.js, Redux, Redux Persist, Axios, API Integration, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
         image: weatherDashboard,
