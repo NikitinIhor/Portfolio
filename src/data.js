@@ -8,11 +8,22 @@ import organic from "../src/images/projects/organic.png";
 import hello from "../src/images/projects/hello.png";
 import wallet from "../src/images/projects/wallet.png";
 import pizzaMaker from "../src/images/projects/pizzaMaker.png";
+import weatherDashboard from "../src/images/projects/weatherDashboard.png";
 
 
 export const DATA = [
     {
         id: 0,
+        title: "Weather-Dashboard-application",
+        subtitle: "Personal project",
+        skills: "React.js, Redux, Redux Persist, Axios, API Integration, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
+        image: weatherDashboard,
+        alt: "Weather-Dashboard-application",
+        description: "A straightforward weather app that lets you enter any city and instantly receive up-to-date weather information. From current temperature and wind speed to other essential weather details, WeatherWatch keeps you informed with just a few taps. Perfect for planning your day or your travels, it offers a quick and easy way to stay on top of the weather.",
+        url: "https://weather-dashboard-application-vert.vercel.app/",
+    },
+    {
+        id: 1,
         title: "PizzaMaker",
         subtitle: "Personal project",
         skills: "React.js, Responsive Design, JavaScript (ES6+), CSS3, Animations, UI/UX Design, Version Control",
@@ -22,7 +33,7 @@ export const DATA = [
         url: "https://pizzamaker-six.vercel.app/",
     },
     {
-        id: 1,
+        id: 2,
         title: "MultiKino",
         subtitle: "Personal project",
         skills: "React.js, Redux, Axios, API Integration, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
@@ -32,7 +43,7 @@ export const DATA = [
         url: "https://goit-react-hw-05-one-theta.vercel.app/",
     },
     {
-        id: 2,
+        id: 3,
         title: "List of users",
         subtitle: "Personal project",
         skills: "React.js, Redux, Redux Persist, Axios, API Integration, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
@@ -42,7 +53,7 @@ export const DATA = [
         url: "https://my-user-list.vercel.app/",
     },
     {
-        id: 3,
+        id: 4,
         title: "Phone book",
         subtitle: "Personal project",
         skills: "React.js, Redux, Redux Persist, Axios, API Integration, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
@@ -52,27 +63,27 @@ export const DATA = [
         url: "https://goit-react-hw-08-five-xi.vercel.app/",
     },
     {
-        id: 4,
+        id: 5,
         title: "Portfolio Website",
         subtitle: "Command project",
         skills: "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
         image: hello,
         alt: "hello",
-        description: "In a collaborative team project, we developed a responsive portfolio website that showcases various projects, complete with JavaScript animations for enhanced user experience. My primary role was to create and implement a contact section, which included a fully functional form for users to send messages directly from the site.",
+        description: "A collaborative team project, we developed a responsive portfolio website that showcases various projects, complete with JavaScript animations for enhanced user experience. My primary role was to create and implement a contact section, which included a fully functional form for users to send messages directly from the site.",
         url: "https://vikto0004.github.io/browser-battalion-2.0/",
     },
     {
-        id: 5,
+        id: 6,
         title: "Health Food",
         subtitle: "Command project",
         skills: "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
         image: organic,
         alt: "organic",
-        description: "It's a team project focused on promoting health food. My primary responsibility was developing and modifying a key section of the application, while also contributing to other areas of the project. The experience also strengthened my skills in teamwork and project management.",
+        description: "A team project focused on promoting health food. My primary responsibility was developing and modifying a key section of the application, while also contributing to other areas of the project. The experience also strengthened my skills in teamwork and project management.",
         url: "https://dr-jeky11.github.io/health-project/",
     },
     {
-        id: 6,
+        id: 7,
         title: "Notebook",
         subtitle: "Personal project",
         skills: "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
@@ -82,7 +93,7 @@ export const DATA = [
         url: "https://nikitinihor.github.io/my-note/",
     },
     {
-        id: 7,
+        id: 8,
         title: "Find a pair",
         subtitle: "Personal project",
         skills: "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
@@ -92,7 +103,7 @@ export const DATA = [
         url: "https://nikitinihor.github.io/game-find-pair/",
     },
     {
-        id: 8,
+        id: 9,
         title: "Personal wallet",
         subtitle: "Personal project",
         skills: "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
@@ -102,7 +113,7 @@ export const DATA = [
         url: "https://nikitinihor.github.io/wallet/",
     },
     {
-        id: 9,
+        id: 10,
         title: "My Gym",
         subtitle: "Personal project",
         skills: "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
