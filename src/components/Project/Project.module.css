@@ -1,3 +1,15 @@
+.newBadge {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  z-index: 10;
+  font-size: 20px;
+}
 .wrapper {
   overflow: hidden;
   position: relative;

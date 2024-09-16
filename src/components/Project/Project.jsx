@@ -9,10 +9,12 @@ export default function Project({
     alt = "project image",
     description,
     url,
+    isNew,
   },
 }) {
   return (
     <div className={css.wrapper}>
+      {isNew && <div className={css.newBadge}>New</div>}
       <a href={url} className={css.item} target="_blank">
         <h2 className={css.title}>- {title} -</h2>
         <img className={css.image} src={image} alt={alt} />
