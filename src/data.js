@@ -32,7 +32,7 @@ export const DATA = [
     title: "WaterTracker",
     subtitle: "Command project",
     skills:
-      "React.js, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
+      "React.js, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control, Node.js, MongoDB, Express",
     image: waterTracker,
     alt: "waterTracker",
     description:

@@ -1,9 +1,11 @@
-import { IconContext } from "react-icons";
-import { PiArrowBendDownLeftDuotone } from "react-icons/pi";
-import { PiArrowBendDownRightDuotone } from "react-icons/pi";
-import { useEffect, useState } from "react";
-import image from "../../images/icons8-cv-64.png";
 import clsx from "clsx";
+import { useEffect, useState } from "react";
+import { IconContext } from "react-icons";
+import {
+  PiArrowBendDownLeftDuotone,
+  PiArrowBendDownRightDuotone,
+} from "react-icons/pi";
+import image from "../../images/icons8-cv-64.png";
 import css from "./Cv.module.css";
 
 export default function Cv() {
@@ -40,7 +42,7 @@ export default function Cv() {
       <a
         onClick={handleClick}
         className={css.image}
-        href="https://drive.google.com/file/d/1xIbSs6l0AQJhL0iMcdxa4AF-dcuUJvUr/view?usp=sharing"
+        href="https://drive.google.com/file/d/1IR0bq9iPNein4YUDrEhNpxJTThttWp68/view?usp=sharing"
         target="_blank"
       >
         <img src={image} alt="my CV" width={100} height={100} />

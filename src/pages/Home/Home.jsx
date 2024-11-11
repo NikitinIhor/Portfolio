@@ -4,12 +4,18 @@ import css from "./Home.module.css";
 
 const text = `Hello! I'm Nikitin Ihor &
 
-I’m a Frontend Developer with a passion for creating
- dynamic and engaging web applications and sites. 
+I’m a Full-Stack Developer with a passion for
+ creating dynamic and engaging web applications
+ and sites. 
 
-  Proficient in HTML, CSS, JavaScript, React, and Redux, 
-  I enjoy turning ideas into intuitive, high-performance 
-  user interfaces.`;
+  Proficient in HTML, CSS, JavaScript, React, Redux,
+  Node.js, Express, and MongoDB,
+  I enjoy turning ideas into intuitive, 
+  high-performance user interfaces while also
+  building reliable backend systems to support them. 
+  My focus is on crafting seamless, 
+  responsive user experiences and efficient, 
+  scalable server-side solutions..`;
 
 export default function Home() {
   return (
