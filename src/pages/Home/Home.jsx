@@ -1,4 +1,5 @@
 import Cv from "../../components/Cv/Cv";
+import Diploma from "../../components/Diploma/Diploma";
 import TypingEffect from "../../components/TypingEffect/TypingEffect";
 import css from "./Home.module.css";
 
@@ -22,7 +23,10 @@ export default function Home() {
     <div className={css.container}>
       <div className={css.wrapper}>
         <TypingEffect text={text} />
-        <Cv />
+        <div className={css.body}>
+          <Diploma />
+          <Cv />
+        </div>
       </div>
     </div>
   );
