@@ -1,15 +1,17 @@
-import favorFood from "../src/images/projects/favorFood.png";
-import findpare from "../src/images/projects/findpare.png";
-import mygym from "../src/images/projects/gym.png";
-import hello from "../src/images/projects/hello.png";
-import multikino from "../src/images/projects/multikino.png";
-import notebook from "../src/images/projects/notebook.png";
-import organic from "../src/images/projects/organic.png";
-import phonebook from "../src/images/projects/phonebook.png";
-import pizzaMaker from "../src/images/projects/pizzaMaker.png";
-import usersList from "../src/images/projects/userslist.png";
-import wallet from "../src/images/projects/wallet.png";
-import weatherDashboard from "../src/images/projects/weatherDashboard.png";
+import favorFood from "../src/images/projects/favorFood.jpg";
+import findpare from "../src/images/projects/findpare.jpg";
+import mygym from "../src/images/projects/gym.jpg";
+import hello from "../src/images/projects/hello.jpg";
+import multikino from "../src/images/projects/multikino.jpg";
+import notebook from "../src/images/projects/notebook.jpg";
+import organic from "../src/images/projects/organic.jpg";
+import phonebook from "../src/images/projects/phonebook.jpg";
+import pizzaMaker from "../src/images/projects/pizzaMaker.jpg";
+import travelTracks from "../src/images/projects/travelTracks.jpg";
+import usersList from "../src/images/projects/userslist.jpg";
+import wallet from "../src/images/projects/wallet.jpg";
+import waterTracker from "../src/images/projects/waterTracker.jpg";
+import weatherDashboard from "../src/images/projects/weatherDashboard.jpg";
 
 export const DATA = [
   {
@@ -27,6 +29,32 @@ export const DATA = [
   },
   {
     id: 1,
+    title: "WaterTracker",
+    subtitle: "Command project",
+    skills:
+      "React.js, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
+    image: waterTracker,
+    alt: "waterTracker",
+    description:
+      "Stay hydrated and monitor your water intake with our user-friendly Water Tracker app. Users can easily log in to set daily water goals and select the amount of water they drink throughout the day. The app also features a history section, allowing users to review their daily, weekly, and monthly hydration habits. With reminders and insights, our Water Tracker helps you develop healthier hydration habits and achieve your wellness goals!",
+    url: "https://browser-battalion-3-0-dev.vercel.app/welcome",
+    isNew: true,
+  },
+  {
+    id: 2,
+    title: "TravelTracks",
+    subtitle: "Personal project",
+    skills:
+      "React.js, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
+    image: travelTracks,
+    alt: "travelTracks",
+    description:
+      "Is a travel companion app that helps users find campers in any region. With advanced filters, users can refine their search to match specific needs, from camper type to amenities. The app offers captivating images for each camper, allowing users to browse visually. An easy-to-use order form streamlines booking, making it a convenient tool for planning road trips and adventures.",
+    url: "https://travel-trucks-amber.vercel.app/",
+    isNew: true,
+  },
+  {
+    id: 3,
     title: "Weather application",
     subtitle: "Personal project",
     skills:
@@ -38,7 +66,7 @@ export const DATA = [
     url: "https://weather-dashboard-application-vert.vercel.app/",
   },
   {
-    id: 2,
+    id: 4,
     title: "PizzaMaker",
     subtitle: "Personal project",
     skills:
@@ -50,7 +78,7 @@ export const DATA = [
     url: "https://pizzamaker-six.vercel.app/",
   },
   {
-    id: 3,
+    id: 5,
     title: "MultiKino",
     subtitle: "Personal project",
     skills:
@@ -62,7 +90,7 @@ export const DATA = [
     url: "https://goit-react-hw-05-one-theta.vercel.app/",
   },
   {
-    id: 4,
+    id: 6,
     title: "List of users",
     subtitle: "Personal project",
     skills:
@@ -74,7 +102,7 @@ export const DATA = [
     url: "https://my-user-list.vercel.app/",
   },
   {
-    id: 5,
+    id: 7,
     title: "Phone book",
     subtitle: "Personal project",
     skills:
@@ -86,7 +114,7 @@ export const DATA = [
     url: "https://goit-react-hw-08-five-xi.vercel.app/",
   },
   {
-    id: 6,
+    id: 8,
     title: "Portfolio Website",
     subtitle: "Command project",
     skills:
@@ -98,7 +126,7 @@ export const DATA = [
     url: "https://vikto0004.github.io/browser-battalion-2.0/",
   },
   {
-    id: 7,
+    id: 9,
     title: "Health Food",
     subtitle: "Command project",
     skills:
@@ -110,7 +138,7 @@ export const DATA = [
     url: "https://dr-jeky11.github.io/health-project/",
   },
   {
-    id: 8,
+    id: 10,
     title: "Notebook",
     subtitle: "Personal project",
     skills:
@@ -122,7 +150,7 @@ export const DATA = [
     url: "https://nikitinihor.github.io/my-note/",
   },
   {
-    id: 9,
+    id: 11,
     title: "Find a pair",
     subtitle: "Personal project",
     skills:
@@ -134,7 +162,7 @@ export const DATA = [
     url: "https://nikitinihor.github.io/game-find-pair/",
   },
   {
-    id: 10,
+    id: 12,
     title: "Personal wallet",
     subtitle: "Personal project",
     skills:
@@ -146,7 +174,7 @@ export const DATA = [
     url: "https://nikitinihor.github.io/wallet/",
   },
   {
-    id: 11,
+    id: 13,
     title: "My Gym",
     subtitle: "Personal project",
     skills:
