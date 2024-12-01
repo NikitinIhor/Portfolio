@@ -6,7 +6,7 @@ import {
   PiArrowBendDownRightDuotone,
 } from "react-icons/pi";
 import image from "../../images/icons8-cv-64.png";
-import css from "./Cv.module.css";
+import css from "../Diploma/Diploma.module.css";
 
 export default function Cv() {
   const [show, setShow] = useState(false);
@@ -32,10 +32,10 @@ export default function Cv() {
     <div className={clsx(css.cv, { [css.show]: show, [css.unvisible]: !show })}>
       <h2 className={css.title}>View my CV</h2>
       <div className={css.arrows}>
-        <IconContext.Provider value={{ size: 50, color: "rgb(206, 206, 206)" }}>
+        <IconContext.Provider value={{ size: 40, color: "rgb(206, 206, 206)" }}>
           <PiArrowBendDownRightDuotone />
         </IconContext.Provider>
-        <IconContext.Provider value={{ size: 50, color: "rgb(206, 206, 206)" }}>
+        <IconContext.Provider value={{ size: 40, color: "rgb(206, 206, 206)" }}>
           <PiArrowBendDownLeftDuotone />
         </IconContext.Provider>
       </div>
@@ -45,7 +45,7 @@ export default function Cv() {
         href="https://drive.google.com/file/d/1IR0bq9iPNein4YUDrEhNpxJTThttWp68/view?usp=sharing"
         target="_blank"
       >
-        <img src={image} alt="my CV" width={100} height={100} />
+        <img src={image} alt="my CV" />
       </a>
     </div>
   );

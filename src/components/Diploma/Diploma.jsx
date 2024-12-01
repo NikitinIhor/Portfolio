@@ -32,10 +32,10 @@ export default function Diploma() {
     <div className={clsx(css.cv, { [css.show]: show, [css.unvisible]: !show })}>
       <h2 className={css.title}>Certificate</h2>
       <div className={css.arrows}>
-        <IconContext.Provider value={{ size: 50, color: "rgb(206, 206, 206)" }}>
+        <IconContext.Provider value={{ size: 40, color: "rgb(206, 206, 206)" }}>
           <PiArrowBendDownRightDuotone />
         </IconContext.Provider>
-        <IconContext.Provider value={{ size: 50, color: "rgb(206, 206, 206)" }}>
+        <IconContext.Provider value={{ size: 40, color: "rgb(206, 206, 206)" }}>
           <PiArrowBendDownLeftDuotone />
         </IconContext.Provider>
       </div>
@@ -45,7 +45,7 @@ export default function Diploma() {
         href="https://drive.google.com/file/d/1mi2nFWC6T7ek0FkiD6vSGSaZ7TdACtGp/view?usp=sharing"
         target="_blank"
       >
-        <img src={image} alt="my CV" width={100} height={100} />
+        <img src={image} alt="my CV" />
       </a>
     </div>
   );

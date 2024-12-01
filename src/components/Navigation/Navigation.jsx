@@ -1,6 +1,6 @@
+import clsx from "clsx";
 import { NavLink } from "react-router-dom";
 import css from "./Navigation.module.css";
-import clsx from "clsx";
 
 export default function Navigation() {
   const isActive = ({ isActive }) => {
@@ -9,25 +9,27 @@ export default function Navigation() {
 
   return (
     <header className={css.header}>
-      <nav>
-        <ul className={css.list}>
-          <li>
-            <NavLink className={isActive} to="/">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={isActive} to="/projects">
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={isActive} to="/contacts">
-              Contacts
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
+      <div className="container">
+        <nav>
+          <ul className={css.list}>
+            <li>
+              <NavLink className={isActive} to="/">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className={isActive} to="/projects">
+                Projects
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className={isActive} to="/contacts">
+                Contacts
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }

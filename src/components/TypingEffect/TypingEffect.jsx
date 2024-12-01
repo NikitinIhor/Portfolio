@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import css from "./TypingEffect.module.css";
 
 export default function TypingEffect({ text }) {
@@ -20,7 +20,7 @@ export default function TypingEffect({ text }) {
   const newText = allText.join("&");
 
   return (
-    <div className={css.wrapper}>
+    <div>
       <pre className={css.title}>
         {title} {index < text.indexOf("&") ? "|" : ""}
       </pre>

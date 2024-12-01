@@ -1,10 +1,4 @@
 .cv {
-  position: fixed;
-  top: 15%;
-  right: 30%;
-  color: white;
-  width: 200px;
-  text-align: center;
   opacity: 0;
   transform: scale(0);
   transition: opacity 3s ease-in, transform 3s ease-in;
@@ -30,7 +24,7 @@
   }
 }
 .title {
-  font-size: 30px;
+  font-size: 18px;
   margin-bottom: 20px;
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -39,31 +33,13 @@
 .arrows {
   display: flex;
   justify-content: space-between;
+  margin-left: -20px;
+  margin-right: -20px;
 }
-.image {
-  position: absolute;
-  top: 40px;
-  left: 50px;
+.image img {
+  display: flex;
+  margin: 0 auto;
+  margin-top: -60px;
+  width: 70px;
   animation: animation 1s infinite alternate;
-}
-@media screen and (max-width: 720px) {
-  .cv {
-    position: fixed;
-    top: 70%;
-    right: -10%;
-    transform: translate(-50%, -50%);
-  }
-  .title {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  .image {
-    top: 10px;
-  }
-}
-@media screen and (max-width: 460px) {
-  .cv {
-    top: 85%;
-    left: 50%;
-  }
 }

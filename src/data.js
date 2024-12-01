@@ -3,6 +3,7 @@ import findpare from "../src/images/projects/findpare.jpg";
 import mygym from "../src/images/projects/gym.jpg";
 import hello from "../src/images/projects/hello.jpg";
 import multikino from "../src/images/projects/multikino.jpg";
+import nannyServices from "../src/images/projects/nannyServices.jpg";
 import notebook from "../src/images/projects/notebook.jpg";
 import organic from "../src/images/projects/organic.jpg";
 import phonebook from "../src/images/projects/phonebook.jpg";
@@ -15,8 +16,21 @@ import weatherDashboard from "../src/images/projects/weatherDashboard.jpg";
 
 export const DATA = [
   {
-    id: 0,
-    title: "FovorFood",
+    id: 2,
+    title: "Nanny.Services",
+    subtitle: "Personal project",
+    skills:
+      "React.js, TS, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
+    image: nannyServices,
+    alt: "nannyServices",
+    description:
+      "NannyServices allows users to register, log in, and browse a list of nannies. They can filter nannies by price, rating, and availability, and contact them via a built-in form.",
+    url: "https://nanny-services-eta.vercel.app/",
+    isNew: true,
+  },
+  {
+    id: 3,
+    title: "FavorFood",
     subtitle: "Personal project",
     skills:
       "React.js, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
@@ -28,7 +42,7 @@ export const DATA = [
     isNew: true,
   },
   {
-    id: 1,
+    id: 4,
     title: "WaterTracker",
     subtitle: "Command project",
     skills:
@@ -41,7 +55,7 @@ export const DATA = [
     isNew: true,
   },
   {
-    id: 2,
+    id: 5,
     title: "TravelTracks",
     subtitle: "Personal project",
     skills:
@@ -54,7 +68,7 @@ export const DATA = [
     isNew: true,
   },
   {
-    id: 3,
+    id: 6,
     title: "Weather application",
     subtitle: "Personal project",
     skills:
@@ -66,7 +80,7 @@ export const DATA = [
     url: "https://weather-dashboard-application-vert.vercel.app/",
   },
   {
-    id: 4,
+    id: 7,
     title: "PizzaMaker",
     subtitle: "Personal project",
     skills:
@@ -78,7 +92,7 @@ export const DATA = [
     url: "https://pizzamaker-six.vercel.app/",
   },
   {
-    id: 5,
+    id: 8,
     title: "MultiKino",
     subtitle: "Personal project",
     skills:
@@ -90,7 +104,7 @@ export const DATA = [
     url: "https://goit-react-hw-05-one-theta.vercel.app/",
   },
   {
-    id: 6,
+    id: 9,
     title: "List of users",
     subtitle: "Personal project",
     skills:
@@ -102,7 +116,7 @@ export const DATA = [
     url: "https://my-user-list.vercel.app/",
   },
   {
-    id: 7,
+    id: 10,
     title: "Phone book",
     subtitle: "Personal project",
     skills:
@@ -114,7 +128,7 @@ export const DATA = [
     url: "https://goit-react-hw-08-five-xi.vercel.app/",
   },
   {
-    id: 8,
+    id: 11,
     title: "Portfolio Website",
     subtitle: "Command project",
     skills:
@@ -126,7 +140,7 @@ export const DATA = [
     url: "https://vikto0004.github.io/browser-battalion-2.0/",
   },
   {
-    id: 9,
+    id: 12,
     title: "Health Food",
     subtitle: "Command project",
     skills:
@@ -138,7 +152,7 @@ export const DATA = [
     url: "https://dr-jeky11.github.io/health-project/",
   },
   {
-    id: 10,
+    id: 13,
     title: "Notebook",
     subtitle: "Personal project",
     skills:
@@ -150,7 +164,7 @@ export const DATA = [
     url: "https://nikitinihor.github.io/my-note/",
   },
   {
-    id: 11,
+    id: 14,
     title: "Find a pair",
     subtitle: "Personal project",
     skills:
@@ -162,7 +176,7 @@ export const DATA = [
     url: "https://nikitinihor.github.io/game-find-pair/",
   },
   {
-    id: 12,
+    id: 15,
     title: "Personal wallet",
     subtitle: "Personal project",
     skills:
@@ -174,7 +188,7 @@ export const DATA = [
     url: "https://nikitinihor.github.io/wallet/",
   },
   {
-    id: 13,
+    id: 16,
     title: "My Gym",
     subtitle: "Personal project",
     skills:
