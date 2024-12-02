@@ -1,9 +1,10 @@
+import { useEffect, useState } from "react";
 import Modal from "react-modal";
-Modal.setAppElement("#root");
 import FeedbackForm from "../FeedbackForm/FeedbackForm";
+Modal.setAppElement("#root");
 
 export default function AddModal({ addModalIsopen, closeAddModal }) {
-  const customStyles = {
+  const baseStyles = {
     content: {
       top: "55%",
       left: "50%",
@@ -13,11 +14,42 @@ export default function AddModal({ addModalIsopen, closeAddModal }) {
       transform: "translate(-50%, -50%)",
       borderRadius: 8,
       color: "white",
-      width: "400px",
       height: "400px",
       boxShadow: "8px 8px 8px black",
     },
   };
+
+  const responsiveStyles = () => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 768) {
+      return {
+        width: "300px",
+      };
+    } else {
+      return {
+        width: "500px",
+      };
+    }
+  };
+
+  const [customStyles, setCustomStyles] = useState({
+    content: { ...baseStyles.content, ...responsiveStyles() },
+  });
+
+  useEffect(() => {
+    const madalWidth = () => {
+      setCustomStyles({
+        content: { ...baseStyles.content, ...responsiveStyles() },
+      });
+    };
+
+    window.addEventListener("resize", madalWidth);
+
+    madalWidth();
+
+    return () => window.removeEventListener("resize", madalWidth);
+  }, []);
 
   return (
     <Modal
