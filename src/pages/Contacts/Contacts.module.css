@@ -41,7 +41,7 @@
 .socials {
   position: absolute;
   right: 1%;
-  top: 55%;
+  top: 60%;
   transition: opacity 1s ease-out;
 }
 .socials img {
