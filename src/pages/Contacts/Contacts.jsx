@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import AddModal from "../../components/AddModal/AddModal";
-import TypingEffect from "../../components/TypingEffect/TypingEffect";
 import Social from "../../components/Social/Social";
+import TypingEffect from "../../components/TypingEffect/TypingEffect";
 import facebook from "../../images/links/facebook.png";
-import linkedin from "../../images/links/linkedin.png";
 import gitchub from "../../images/links/github.png";
+import linkedin from "../../images/links/linkedin.png";
 import css from "./Contacts.module.css";
 
 const text = `Get in touch &
@@ -37,50 +37,55 @@ export default function Contacts() {
 
   return (
     <div className={css.wrapper}>
-      <TypingEffect text={text} />
-      {show && (
-        <div className={`${css.email} ${css.fadeIn}`}>
-          <a href="mailto:Nikitinigor0907@gmail.com">
-            Nikitinigor0907@gmail.com
-          </a>
-        </div>
-      )}
-      {show && (
-        <div className={`${css.socials} ${css.fadeIn}`}>
-          <Social>
-            <a
-              href="https://www.facebook.com/igor.nikitin.73113/"
-              className={css.link}
-            >
-              <img src={facebook} alt="facebook" />
-              Facebook
+      <div className="container">
+        <TypingEffect text={text} />
+        {show && (
+          <div className={`${css.email} ${css.fadeIn}`}>
+            <a href="mailto:Nikitinigor0907@gmail.com">
+              Nikitinigor0907@gmail.com
             </a>
-          </Social>
-          <Social>
-            <a
-              href="https://www.linkedin.com/in/nikitin-ihor/"
-              className={css.link}
-            >
-              <img src={linkedin} alt="linkedin" />
-              Linkedin
-            </a>
-          </Social>
-          <Social>
-            <a href="https://github.com/NikitinIhor" className={css.link}>
-              <div className={css.github}>
-                <img src={gitchub} alt="github" width={35} height={35} />
-                Github
-              </div>
-            </a>
-          </Social>
-        </div>
-      )}
-      {show && (
-        <button onClick={openAddModal} className={css.btn}>
-          ~let's talk
-        </button>
-      )}
-      <AddModal closeAddModal={closeAddModal} addModalIsopen={addModalIsopen} />
+          </div>
+        )}
+        {show && (
+          <div className={`${css.socials} ${css.fadeIn}`}>
+            <Social>
+              <a
+                href="https://www.facebook.com/igor.nikitin.73113/"
+                className={css.link}
+              >
+                <img src={facebook} alt="facebook" />
+                Facebook
+              </a>
+            </Social>
+            <Social>
+              <a
+                href="https://www.linkedin.com/in/nikitin-ihor/"
+                className={css.link}
+              >
+                <img src={linkedin} alt="linkedin" />
+                Linkedin
+              </a>
+            </Social>
+            <Social>
+              <a href="https://github.com/NikitinIhor" className={css.link}>
+                <div className={css.github}>
+                  <img src={gitchub} alt="github" width={35} height={35} />
+                  Github
+                </div>
+              </a>
+            </Social>
+          </div>
+        )}
+        {show && (
+          <button onClick={openAddModal} className={css.btn}>
+            ~let's talk
+          </button>
+        )}
+        <AddModal
+          closeAddModal={closeAddModal}
+          addModalIsopen={addModalIsopen}
+        />
+      </div>
     </div>
   );
 }

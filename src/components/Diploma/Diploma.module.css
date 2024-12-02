@@ -43,3 +43,12 @@
   width: 70px;
   animation: animation 1s infinite alternate;
 }
+@media (min-width: 1440px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .image img {
+    width: 150px;
+  }
+}

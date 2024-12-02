@@ -9,14 +9,14 @@ I’m a Full-Stack Developer with a passion for
  creating dynamic and engaging web applications
  and sites. 
 
-  Proficient in HTML, CSS, JavaScript, React, 
-  Redux, Node.js, Express, and MongoDB,
-  I enjoy turning ideas into intuitive, 
-  high-performance user interfaces while also
-  building reliable backend systems to support 
-  them. My focus is on crafting seamless, 
-  responsive user experiences and efficient, 
-  scalable server-side solutions..`;
+Proficient in HTML, CSS, JavaScript, React, 
+Redux, Node.js, Express, and MongoDB,
+I enjoy turning ideas into intuitive, 
+high-performance user interfaces while also
+building reliable backend systems to support 
+them. My focus is on crafting seamless, 
+responsive user experiences and efficient, 
+scalable server-side solutions..`;
 
 export default function Home() {
   return (

@@ -1,7 +1,9 @@
+import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useId, useState } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import Loader from "../Loader/Loader";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
+import Loader from "../Loader/Loader";
 import css from "./FeedbackForm.module.css";
 
 const initialValues = {
@@ -24,18 +26,27 @@ const FeedbackSchema = Yup.object().shape({
 
 export default function FeedbackForm({ closeAddModal }) {
   const id = useId();
-
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (values, actions) => {
+    console.log(values);
     setLoading(true);
 
     try {
       await new Promise((resolve) => setTimeout(resolve, 2000));
       actions.resetForm();
       closeAddModal();
+      navigate("/");
+      toast.success("Message seccessfully sent!", {
+        duration: 4000,
+        position: "top-right",
+      });
     } catch (error) {
-      console.error("Submission error:", error);
+      toast.error("Message error!", {
+        duration: 4000,
+        position: "top-right",
+      });
     } finally {
       setLoading(false);
     }

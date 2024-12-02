@@ -1,21 +1,27 @@
 .footer {
   z-index: 100;
-  margin-top: -60px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 30px;
+  margin-top: -100px;
   color: rgb(206, 206, 206);
+}
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
 }
 .icon {
   display: flex;
   align-items: center;
-  gap: 25px;
+  justify-content: space-between;
+  gap: 10px;
   transform: translateY(-100px);
   transition: all 1s ease-in;
   animation: appear ease-in;
 }
+.icon span {
+  display: none;
+}
+
 .hidden {
   opacity: 0;
   visibility: hidden;
@@ -38,8 +44,13 @@
     transform: translateY(0);
   }
 }
-@media screen and (max-width: 800px) {
-  span {
-    display: none;
+@media (min-width: 768px) {
+  .icon span {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .icon span {
+    font-size: 24px;
   }
 }

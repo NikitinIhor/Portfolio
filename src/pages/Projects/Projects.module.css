@@ -5,11 +5,11 @@
   transform: translate(-50%, -50%);
 }
 .list {
-  padding: 80px 15px 15px 15px;
+  padding-top: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 
 .item {
@@ -23,8 +23,8 @@
 .item:hover {
   background-color: rgb(228, 228, 228);
 }
-@media screen and (max-width: 720px) {
+@media (min-width: 768px) {
   .list {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }

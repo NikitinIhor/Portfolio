@@ -1,21 +1,31 @@
 .wrapper {
   background: url("../../images/wallpaper.jpg") no-repeat center;
   background-size: cover;
-  min-height: 100vh;
   padding-top: 10px;
+  min-height: 100vh;
 }
 .main {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
   justify-content: space-between;
+  height: 500px;
 }
 .body {
   display: flex;
+  gap: 10px;
   justify-content: space-around;
 }
 @media (min-width: 768px) {
   .wrapper {
     padding-top: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .main {
+    flex-direction: row;
+  }
+  .body {
+    gap: 100px;
   }
 }

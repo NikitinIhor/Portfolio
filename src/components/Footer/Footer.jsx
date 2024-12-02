@@ -1,13 +1,8 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaJs } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
-import { IconContext } from "react-icons";
-import { useEffect, useState } from "react";
 import clsx from "clsx";
+import { useEffect, useState } from "react";
+import { IconContext } from "react-icons";
+import { FaCss3Alt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { SiRedux, SiTypescript } from "react-icons/si";
 import css from "./Footer.module.css";
 
 export default function Footer() {
@@ -37,68 +32,74 @@ export default function Footer() {
 
   return (
     <div className={css.footer}>
-      <IconContext.Provider value={{ size: 30, color: "rgb(206, 206, 206)" }}>
-        {icons && (
-          <>
-            <div
-              className={clsx(css.icon, {
-                [css.show]: icons.html,
-                [css.hidden]: !icons.html,
-              })}
-            >
-              <FaHtml5 /> <span>HTML</span>
-            </div>
-            <div
-              className={clsx(css.icon, {
-                [css.show]: icons.css,
-                [css.hidden]: !icons.css,
-              })}
-            >
-              <FaCss3Alt /> <span>CSS</span>
-            </div>
-            <div
-              className={clsx(css.icon, {
-                [css.show]: icons.js,
-                [css.hidden]: !icons.js,
-              })}
-            >
-              <FaJs /> <span>JS</span>
-            </div>
-            <div
-              className={clsx(css.icon, {
-                [css.show]: icons.react,
-                [css.hidden]: !icons.react,
-              })}
-            >
-              <FaReact /> <span>REACT</span>
-            </div>
-            <div
-              className={clsx(css.icon, {
-                [css.show]: icons.redux,
-                [css.hidden]: !icons.redux,
-              })}
-            >
-              <SiRedux /> <span>REDUX</span>
-            </div>
-            <div
-              className={clsx(css.icon, {
-                [css.show]: icons.ts,
-                [css.hidden]: !icons.ts,
-              })}
-            >
-              <SiTypescript /> <span>TS</span>
-            </div>
-            <div
-              className={clsx(css.icon, {
-                [css.show]: icons.github,
-                [css.hidden]: !icons.github,
-              })}
-            >
-              <FaGithub /> <span>GITHUB</span>
-            </div>
-          </>
-        )}
-      </IconContext.Provider>
+      <div className="container">
+        <div className={css.body}>
+          <IconContext.Provider
+            value={{ size: 30, color: "rgb(206, 206, 206)" }}
+          >
+            {icons && (
+              <>
+                <div
+                  className={clsx(css.icon, {
+                    [css.show]: icons.html,
+                    [css.hidden]: !icons.html,
+                  })}
+                >
+                  <FaHtml5 /> <span>HTML</span>
+                </div>
+                <div
+                  className={clsx(css.icon, {
+                    [css.show]: icons.css,
+                    [css.hidden]: !icons.css,
+                  })}
+                >
+                  <FaCss3Alt /> <span>CSS</span>
+                </div>
+                <div
+                  className={clsx(css.icon, {
+                    [css.show]: icons.js,
+                    [css.hidden]: !icons.js,
+                  })}
+                >
+                  <FaJs /> <span>JS</span>
+                </div>
+                <div
+                  className={clsx(css.icon, {
+                    [css.show]: icons.react,
+                    [css.hidden]: !icons.react,
+                  })}
+                >
+                  <FaReact /> <span>REACT</span>
+                </div>
+                <div
+                  className={clsx(css.icon, {
+                    [css.show]: icons.redux,
+                    [css.hidden]: !icons.redux,
+                  })}
+                >
+                  <SiRedux /> <span>REDUX</span>
+                </div>
+                <div
+                  className={clsx(css.icon, {
+                    [css.show]: icons.ts,
+                    [css.hidden]: !icons.ts,
+                  })}
+                >
+                  <SiTypescript /> <span>TS</span>
+                </div>
+                <div
+                  className={clsx(css.icon, {
+                    [css.show]: icons.github,
+                    [css.hidden]: !icons.github,
+                  })}
+                >
+                  <FaGithub /> <span>GITHUB</span>
+                </div>
+              </>
+            )}
+          </IconContext.Provider>
+        </div>
+      </div>
     </div>
   );
 }
