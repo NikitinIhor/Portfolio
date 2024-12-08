@@ -10,6 +10,7 @@ export default function Project({
     description,
     url,
     isNew,
+    year,
   },
 }) {
   return (
@@ -25,6 +26,7 @@ export default function Project({
         <p className={css.description}>
           <span className={css.span}>Description:</span> {description}
         </p>
+        <span className={css.year}>{year}</span>
       </a>
     </div>
   );

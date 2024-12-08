@@ -61,6 +61,12 @@
   color: black;
   font-weight: 600;
 }
+.year {
+  display: flex;
+  justify-content: end;
+  font-size: 17px;
+  color: red;
+}
 @media (min-width: 768px) {
   .title {
     font-size: 26px;
@@ -73,6 +79,9 @@
   }
   .description {
     font-size: 16px;
+  }
+  .year {
+    font-size: 24px;
   }
 }
 @media (min-width: 1440px) {

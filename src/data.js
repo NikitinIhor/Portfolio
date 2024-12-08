@@ -1,3 +1,4 @@
+import ARTHROHARD from "../src/images/projects/ARTHROHARD.jpg";
 import favorFood from "../src/images/projects/favorFood.jpg";
 import findpare from "../src/images/projects/findpare.jpg";
 import mygym from "../src/images/projects/gym.jpg";
@@ -20,13 +21,15 @@ export const DATA = [
     title: "Nanny.Services",
     subtitle: "Personal project",
     skills:
-      "React.js, TS, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
+      "React.js, Redux, TS, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
     image: nannyServices,
     alt: "nannyServices",
     description:
       "NannyServices allows users to register, log in, and browse a list of nannies. They can filter nannies by price, rating, and availability, and contact them via a built-in form.",
     url: "https://nanny-services-eta.vercel.app/",
     isNew: true,
+    year: "2024",
+    filter: "ts",
   },
   {
     id: 3,
@@ -40,32 +43,38 @@ export const DATA = [
       "Welcome to FovorFood, your one-stop destination for delicious food! Browse through our diverse menu of dinner options, cakes, salads, and more. Effortlessly search for your favorites, add them to your cart, and place your order with just a few clicks.",
     url: "https://favor-food.vercel.app/",
     isNew: true,
+    year: "2024",
+    filter: "react",
   },
   {
     id: 4,
     title: "WaterTracker",
     subtitle: "Command project",
     skills:
-      "React.js, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control, Node.js, MongoDB, Express",
+      "React.js, resux, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control, Node.js, MongoDB, Express",
     image: waterTracker,
     alt: "waterTracker",
     description:
       "Stay hydrated and monitor your water intake with our user-friendly Water Tracker app. Users can easily log in to set daily water goals and select the amount of water they drink throughout the day. The app also features a history section, allowing users to review their daily, weekly, and monthly hydration habits. With reminders and insights, our Water Tracker helps you develop healthier hydration habits and achieve your wellness goals!",
     url: "https://browser-battalion-3-0-dev.vercel.app/welcome",
     isNew: true,
+    year: "2024",
+    filter: "react",
   },
   {
     id: 5,
     title: "TravelTracks",
     subtitle: "Personal project",
     skills:
-      "React.js, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
+      "React.js, Redux, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
     image: travelTracks,
     alt: "travelTracks",
     description:
       "Is a travel companion app that helps users find campers in any region. With advanced filters, users can refine their search to match specific needs, from camper type to amenities. The app offers captivating images for each camper, allowing users to browse visually. An easy-to-use order form streamlines booking, making it a convenient tool for planning road trips and adventures.",
     url: "https://travel-trucks-amber.vercel.app/",
     isNew: true,
+    year: "2024",
+    filter: "react",
   },
   {
     id: 6,
@@ -78,6 +87,8 @@ export const DATA = [
     description:
       "A straightforward weather app that lets you enter any city and instantly receive up-to-date weather information. From current temperature and wind speed to other essential weather details, WeatherWatch keeps you informed with just a few taps. Perfect for planning your day or your travels, it offers a quick and easy way to stay on top of the weather.",
     url: "https://weather-dashboard-application-vert.vercel.app/",
+    year: "2024",
+    filter: "react",
   },
   {
     id: 7,
@@ -90,6 +101,8 @@ export const DATA = [
     description:
       "An interactive web app where users can customize their pizza by choosing different halves, each with its own price. After selecting, the order is animated into the cart, where users can either finalize the purchase or cancel. The app offers a fun and easy way to create and manage custom pizza orders.",
     url: "https://pizzamaker-six.vercel.app/",
+    year: "2024",
+    filter: "react",
   },
   {
     id: 8,
@@ -102,6 +115,8 @@ export const DATA = [
     description:
       "A movie discovery platform built with React and Redux, integrating the Movie Database API. Users can search for films, view detailed information, and watch trailers. The app is fully responsive and efficiently handles state management for a smooth user experience.",
     url: "https://goit-react-hw-05-one-theta.vercel.app/",
+    year: "2024",
+    filter: "react",
   },
   {
     id: 9,
@@ -114,6 +129,8 @@ export const DATA = [
     description:
       "A React and Redux app with persistent state, allowing users to add, update, and delete profiles seamlessly. It ensures data continuity across sessions with Redux Persist and features a clean, responsive design for easy user management.",
     url: "https://my-user-list.vercel.app/",
+    year: "2023",
+    filter: "react",
   },
   {
     id: 10,
@@ -126,6 +143,8 @@ export const DATA = [
     description:
       "A React application utilizing Redux and Redux Persist for state management, featuring secure login and logout functionality. Users can efficiently manage their contacts with operations to add, update, and delete entries.",
     url: "https://goit-react-hw-08-five-xi.vercel.app/",
+    year: "2023",
+    filter: "react",
   },
   {
     id: 11,
@@ -138,6 +157,8 @@ export const DATA = [
     description:
       "A collaborative team project, we developed a responsive portfolio website that showcases various projects, complete with JavaScript animations for enhanced user experience. My primary role was to create and implement a contact section, which included a fully functional form for users to send messages directly from the site.",
     url: "https://vikto0004.github.io/browser-battalion-2.0/",
+    year: "2024",
+    filter: "vanilla",
   },
   {
     id: 12,
@@ -150,9 +171,25 @@ export const DATA = [
     description:
       "A team project focused on promoting health food. My primary responsibility was developing and modifying a key section of the application, while also contributing to other areas of the project. The experience also strengthened my skills in teamwork and project management.",
     url: "https://dr-jeky11.github.io/health-project/",
+    year: "2024",
+    filter: "vanilla",
   },
   {
-    id: 13,
+    id: 14,
+    title: "ARTHROHARD",
+    subtitle: "Personal project",
+    skills:
+      "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
+    image: ARTHROHARD,
+    alt: "ARTHROHARD",
+    description:
+      "Arthrohard is a highly digestible dietary supplement in the form of a syrup, created with the health of your dog's or cat's joints in mind. Our mobile app allows quick access to information about the product, its ingredients and health benefits, as well as allows interaction with various product presentation options.",
+    url: "https://nikitinihor.github.io/ARTHROHARD/",
+    year: "2024",
+    filter: "vanilla",
+  },
+  {
+    id: 15,
     title: "Notebook",
     subtitle: "Personal project",
     skills:
@@ -162,9 +199,11 @@ export const DATA = [
     description:
       "A vanilla JavaScript application that enables users to create and manage notes with descriptions and categories. The app offers a straightforward interface for adding, organizing, and viewing notes.",
     url: "https://nikitinihor.github.io/my-note/",
+    year: "2022",
+    filter: "vanilla",
   },
   {
-    id: 14,
+    id: 16,
     title: "Find a pair",
     subtitle: "Personal project",
     skills:
@@ -174,9 +213,11 @@ export const DATA = [
     description:
       "A vanilla JavaScript game where players find and match pairs of animal cards. The game features a simple and engaging interface, challenging players to improve their memory and attention skills as they uncover and match the animal pairs.",
     url: "https://nikitinihor.github.io/game-find-pair/",
+    year: "2022",
+    filter: "vanilla",
   },
   {
-    id: 15,
+    id: 17,
     title: "Personal wallet",
     subtitle: "Personal project",
     skills:
@@ -186,9 +227,11 @@ export const DATA = [
     description:
       "A dynamic wallet application built with Vanilla JavaScript. It allows users to add money, track income and expenses, and manage transactions, all with smooth, engaging animations for an enhanced user experience.",
     url: "https://nikitinihor.github.io/wallet/",
+    year: "2022",
+    filter: "vanilla",
   },
   {
-    id: 16,
+    id: 18,
     title: "My Gym",
     subtitle: "Personal project",
     skills:
@@ -198,5 +241,7 @@ export const DATA = [
     description:
       "A lightweight gym management app built with vanilla JavaScript. It allows users to create, modify, and manage workout routines with ease.",
     url: "https://nikitinihor.github.io/My-Gym/",
+    year: "2022",
+    filter: "vanilla",
   },
 ];
