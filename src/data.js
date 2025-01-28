@@ -107,20 +107,6 @@ export const DATA = [
     filter: "react",
   },
   {
-    id: 8,
-    title: "ARTHROHARD",
-    subtitle: "Personal project",
-    skills:
-      "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
-    image: ARTHROHARD,
-    alt: "ARTHROHARD",
-    description:
-      "Arthrohard is a highly digestible dietary supplement in the form of a syrup, created with the health of your dog's or cat's joints in mind. Our mobile app allows quick access to information about the product, its ingredients and health benefits, as well as allows interaction with various product presentation options.",
-    url: "https://nikitinihor.github.io/ARTHROHARD/",
-    year: "2024",
-    filter: "vanilla",
-  },
-  {
     id: 9,
     title: "Weather application",
     subtitle: "Personal project",

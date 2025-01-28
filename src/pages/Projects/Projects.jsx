@@ -51,6 +51,8 @@ export default function Projects() {
         return projects.year === "2023";
       case "2024":
         return projects.year === "2024";
+      case "2025":
+        return projects.year === "2025";
       default:
         return true;
     }
