@@ -25,8 +25,8 @@
 
 .email {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 42%;
+  left: 60%;
   transform: translate(-50%, -50%);
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -75,8 +75,8 @@
 }
 .btn {
   position: absolute;
-  bottom: 45%;
-  left: 50%;
+  bottom: 40%;
+  left: 20%;
   transform: translate(-50%, -50%);
   background-color: rgb(248, 35, 35);
   color: white;
@@ -93,11 +93,12 @@
 }
 @media (min-width: 768px) {
   .email {
-    top: 60%;
+    top: 59%;
+    left: 45%;
     font-size: 22px;
   }
   .btn {
-    bottom: 20%;
+    bottom: 10%;
     font-size: 22px;
   }
   .socials {
@@ -111,5 +112,6 @@
   .btn {
     bottom: 15%;
     font-size: 28px;
+    /* left: 60%; */
   }
 }

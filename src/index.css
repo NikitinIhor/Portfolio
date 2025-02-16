@@ -43,19 +43,17 @@ a {
 }
 
 .container {
-  max-width: 320px;
-  padding: 0 15px;
+  max-width: 375px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 24px;
   }
 }
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding: 0 40px;
   }
 }
