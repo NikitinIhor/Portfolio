@@ -35,6 +35,8 @@ export default function Projects() {
     switch (filterValue) {
       case "react":
         return projects.filter === "react";
+      case "next":
+        return projects.filter === "next";
       case "ts":
         return projects.filter === "ts";
       case "vanilla":

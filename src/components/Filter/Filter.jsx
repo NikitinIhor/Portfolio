@@ -15,6 +15,7 @@ export default function Filter({ filterValue, handleChangeFilter }) {
         <option value="all projects">All projects</option>
         <option value="react">React</option>
         <option value="ts">React + TS</option>
+        <option value="next">Next + TS</option>
         <option value="vanilla">Vanilla JS</option>
         <option value="personal">Personal projects</option>
         <option value="command">Command projects</option>

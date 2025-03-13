@@ -10,6 +10,7 @@ import notebook from "../src/images/projects/notebook.jpg";
 import organic from "../src/images/projects/organic.jpg";
 import phonebook from "../src/images/projects/phonebook.jpg";
 import pizzaMaker from "../src/images/projects/pizzaMaker.jpg";
+import roin_group from "../src/images/projects/roin_group.jpg";
 import travelTracks from "../src/images/projects/travelTracks.jpg";
 import usersList from "../src/images/projects/userslist.jpg";
 import wallet from "../src/images/projects/wallet.jpg";
@@ -17,6 +18,21 @@ import waterTracker from "../src/images/projects/waterTracker.jpg";
 import weatherDashboard from "../src/images/projects/weatherDashboard.jpg";
 
 export const DATA = [
+  {
+    id: 2,
+    title: "Roin Group",
+    subtitle: "Command project",
+    skills:
+      "Responsive Design, JavaScript (ES6+), TypeScript, Next.js, React, Tailwind CSS, CSS3, UI/UX Design, Node.js, Animation, Version Control (Git), Docker",
+    image: roin_group,
+    alt: "Roin Group",
+    description:
+      "Roin Group is a website where you can search, choose, and order shower cabins, mirrors, glass partitions, terraces, canopies, and other glass products. You can customize your selection by width, price, and colors to create your ideal bathroom",
+    url: "https://roin.group/",
+    isNew: true,
+    year: "2025",
+    filter: "next",
+  },
   {
     id: 3,
     title: "Family-Nest-Farm-Adventures",
@@ -34,18 +50,18 @@ export const DATA = [
   },
   {
     id: 4,
-    title: "Nanny.Services",
+    title: "ARTHROHARD",
     subtitle: "Personal project",
     skills:
-      "React.js, Redux, TS, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
-    image: nannyServices,
-    alt: "nannyServices",
+      "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
+    image: ARTHROHARD,
+    alt: "ARTHROHARD",
     description:
-      "NannyServices allows users to register, log in, and browse a list of nannies. They can filter nannies by price, rating, and availability, and contact them via a built-in form.",
-    url: "https://nanny-services-eta.vercel.app/",
+      "Arthrohard is a highly digestible dietary supplement in the form of a syrup, created with the health of your dog's or cat's joints in mind. Our mobile app allows quick access to information about the product, its ingredients and health benefits, as well as allows interaction with various product presentation options.",
+    url: "https://nikitinihor.github.io/ARTHROHARD/",
     isNew: true,
     year: "2024",
-    filter: "ts",
+    filter: "vanilla",
   },
   {
     id: 5,
@@ -79,18 +95,17 @@ export const DATA = [
   },
   {
     id: 7,
-    title: "ARTHROHARD",
+    title: "Nanny.Services",
     subtitle: "Personal project",
     skills:
-      "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
-    image: ARTHROHARD,
-    alt: "ARTHROHARD",
+      "React.js, Redux, TS, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
+    image: nannyServices,
+    alt: "nannyServices",
     description:
-      "Arthrohard is a highly digestible dietary supplement in the form of a syrup, created with the health of your dog's or cat's joints in mind. Our mobile app allows quick access to information about the product, its ingredients and health benefits, as well as allows interaction with various product presentation options.",
-    url: "https://nikitinihor.github.io/ARTHROHARD/",
-    isNew: true,
+      "NannyServices allows users to register, log in, and browse a list of nannies. They can filter nannies by price, rating, and availability, and contact them via a built-in form.",
+    url: "https://nanny-services-eta.vercel.app/",
     year: "2024",
-    filter: "vanilla",
+    filter: "ts",
   },
   {
     id: 8,
