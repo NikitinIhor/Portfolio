@@ -22,12 +22,10 @@ export default function Home() {
   return (
     <div className={css.wrapper}>
       <div className="container">
-        <div className={css.main}>
-          <TypingEffect text={text} />
-          <div className={css.body}>
-            <Diploma />
-            <Cv />
-          </div>
+        <TypingEffect text={text} />
+        <div className={css.body}>
+          <Diploma />
+          <Cv />
         </div>
       </div>
     </div>

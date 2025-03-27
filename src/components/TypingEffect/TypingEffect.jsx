@@ -20,7 +20,7 @@ export default function TypingEffect({ text }) {
   const newText = allText.join("&");
 
   return (
-    <div>
+    <div className={css.wrapper}>
       <pre className={css.title}>
         {title} {index < text.indexOf("&") ? "|" : ""}
       </pre>
