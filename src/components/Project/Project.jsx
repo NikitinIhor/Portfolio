@@ -1,4 +1,7 @@
+import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
+
+import { VscEye, VscEyeClosed } from "react-icons/vsc";
 import css from "./Project.module.css";
 
 export default function Project({
@@ -13,32 +16,78 @@ export default function Project({
     github,
     isNew,
     year,
-    inProcess,
   },
 }) {
+  const [showSkills, setShowSkills] = useState(false);
+  const [showDescription, setShowDescription] = useState(false);
+
   return (
     <div className={css.wrapper}>
-      {inProcess && (
-        <div className={css.inProcess}>
-          <p> Application in Development</p>
-        </div>
-      )}
-      <a className={css.github} href={github} target="_blank">
+      <a
+        className={css.github}
+        href={github}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FaGithub /> <span>GitHub</span>
       </a>
+
       {isNew && <div className={css.newBadge}>New</div>}
-      <a href={url} className={css.item} target="_blank">
-        <h2 className={css.title}>- {title} -</h2>
+
+      <h2 className={css.title}>- {title} -</h2>
+      <a
+        href={url}
+        className={css.item}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img className={css.image} src={image} alt={alt} />
-        <p className={css.sub}>{subtitle}</p>
-        <p className={css.skills}>
-          <span>Skills i used:</span> ({skills})
-        </p>
-        <p className={css.description}>
-          <span className={css.span}>Description:</span> {description}
-        </p>
-        <span className={css.year}>{year}</span>
       </a>
+      <p className={css.sub}>{subtitle}</p>
+
+      <div
+        className={css.skills}
+        onClick={() => setShowSkills((prevState) => !prevState)}
+      >
+        <div className={css.menu}>
+          <p>Skills I used</p>
+          <span className={css.finger}>
+            {showSkills ? <VscEyeClosed size="24px" /> : <VscEye size="24px" />}
+          </span>
+        </div>
+      </div>
+      {showSkills && (
+        <div className={`${css.skills_body} ${showSkills ? css.active : ""}`}>
+          {skills}
+        </div>
+      )}
+
+      <div
+        className={css.description}
+        onClick={() => setShowDescription((prevState) => !prevState)}
+      >
+        <div className={css.menu}>
+          <p className={css.span}>Description</p>
+          <span className={css.finger}>
+            {showDescription ? (
+              <VscEyeClosed size="24px" />
+            ) : (
+              <VscEye size="24px" />
+            )}
+          </span>
+        </div>
+      </div>
+      {showDescription && (
+        <div
+          className={`${css.description_body} ${
+            showDescription ? css.active : ""
+          }`}
+        >
+          {description}
+        </div>
+      )}
+
+      <span className={css.year}>{year}</span>
     </div>
   );
 }

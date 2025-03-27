@@ -1,5 +1,5 @@
 .footer {
-  z-index: 100;
+  z-index: 00;
   color: rgb(206, 206, 206);
   background-color: rgb(38, 36, 36);
 }
@@ -50,8 +50,8 @@
     display: block;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .icon span {
-    font-size: 24px;
+    font-size: 18px;
   }
 }

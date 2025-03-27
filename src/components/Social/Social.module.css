@@ -10,7 +10,7 @@
     font-size: 26px;
   }
 }
-@media (min-width: 140px) {
+@media (min-width: 1200px) {
   .social {
     font-size: 32px;
   }

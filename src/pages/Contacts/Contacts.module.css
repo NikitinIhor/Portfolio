@@ -40,7 +40,7 @@
 }
 .socials {
   position: absolute;
-  right: 1%;
+  right: 2%;
   top: 60%;
   transition: opacity 1s ease-out;
 }
@@ -105,13 +105,12 @@
     top: 30%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .email {
     font-size: 28px;
   }
   .btn {
     bottom: 15%;
     font-size: 28px;
-    /* left: 60%; */
   }
 }

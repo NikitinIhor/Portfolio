@@ -12,16 +12,11 @@ export default function Projects() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 1200);
+    }, 1000);
     return () => clearTimeout(timeout);
   }, []);
 
-  if (loading)
-    return (
-      <div className={css.loader}>
-        <Loader />
-      </div>
-    );
+  if (loading) return <Loader />;
 
   const handleChangeFilter = (filter) => {
     setLoading(true);

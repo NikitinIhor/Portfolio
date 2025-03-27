@@ -35,7 +35,6 @@ export const DATA = [
     isNew: true,
     year: "2025",
     filter: "react",
-    inProcess: true,
   },
   {
     id: 1,
