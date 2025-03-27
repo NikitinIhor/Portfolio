@@ -5,18 +5,18 @@ import css from "./Home.module.css";
 
 const text = `Hello! I'm Nikitin Ihor &
 
-I’m a Full-Stack Developer with a passion for
- creating dynamic and engaging web applications
- and sites. 
+I’m a Full-Stack Developer passionate about 
+building dynamic and engaging web applications. 
+With expertise in HTML, CSS, JavaScript, React,
+Next.js,Redux,Tailwind CSS, Node.js, Express, 
+and MongoDB, I specialize in crafting intuitive 
+user interfaces and developing scalable backend
+systems.
 
-Proficient in HTML, CSS, JavaScript, React, 
-Redux, Node.js, Express, and MongoDB,
-I enjoy turning ideas into intuitive, 
-high-performance user interfaces while also
-building reliable backend systems to support 
-them. My focus is on crafting seamless, 
-responsive user experiences and efficient, 
-scalable server-side solutions..`;
+I love turning ideas into high-performance, 
+responsive experiences, ensuring both seamless 
+front-end interactions
+and efficient server-side solutions.`;
 
 export default function Home() {
   return (
