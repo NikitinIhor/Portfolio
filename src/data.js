@@ -4,6 +4,7 @@ import favorFood from "../src/images/projects/favorFood.jpg";
 import findpare from "../src/images/projects/findpare.jpg";
 import mygym from "../src/images/projects/gym.jpg";
 import hello from "../src/images/projects/hello.jpg";
+import idosell_clone from "../src/images/projects/idosel_clone.jpg";
 import multikino from "../src/images/projects/multikino.jpg";
 import nannyServices from "../src/images/projects/nannyServices.jpg";
 import notebook from "../src/images/projects/notebook.jpg";
@@ -35,6 +36,7 @@ export const DATA = [
     isNew: true,
     year: "2025",
     filter: "react",
+    top: true,
   },
   {
     id: 1,
@@ -51,6 +53,7 @@ export const DATA = [
     isNew: true,
     year: "2025",
     filter: "next",
+    top: true,
   },
   {
     id: 2,
@@ -83,6 +86,7 @@ export const DATA = [
     isNew: true,
     year: "2025",
     filter: "vanilla",
+    top: true,
   },
   {
     id: 4,
@@ -99,6 +103,23 @@ export const DATA = [
     isNew: true,
     year: "2024",
     filter: "vanilla",
+    top: true,
+  },
+  {
+    id: 4.1,
+    title: "idoSell_CLONE",
+    subtitle: "Personal project",
+    skills:
+      "Node.js, MongoDB, Express, Swagger and OpenAPI, RESTful APIs, JWT, Mongoose, Git, and others",
+
+    image: idosell_clone,
+    alt: "idosell_clone",
+    description:
+      "Idose Clone is a backend built with MongoDB (NoSQL) that integrates with the Idosell platform to fetch product data. It features user authentication with login and registration, allowing secure access to product information.",
+    url: "https://idosell-clone.onrender.com/api-docs/",
+    github: "https://github.com/NikitinIhor/idoSell_CLONE",
+    year: "2024",
+    filter: "node",
   },
   {
     id: 5,
@@ -114,6 +135,7 @@ export const DATA = [
     github: "https://github.com/NikitinIhor/FavorFood",
     year: "2024",
     filter: "react",
+    top: true,
   },
   {
     id: 6,
@@ -130,6 +152,7 @@ export const DATA = [
     github2: "https://github.com/NikitinIhor/WaterTracker-backend",
     year: "2024",
     filter: "react",
+    top: true,
   },
   {
     id: 7,
@@ -235,6 +258,7 @@ export const DATA = [
     github: "https://github.com/Vikto0004/browser-battalion-2.0",
     year: "2024",
     filter: "vanilla",
+    top: true,
   },
   {
     id: 14,

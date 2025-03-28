@@ -15,11 +15,11 @@ export default function Filter({ filterValue, handleChangeFilter }) {
         <option value="all projects">All projects</option>
         <option value="react">React</option>
         <option value="ts">React + TS</option>
-        <option value="next">Next + TS</option>
-        <option value="vanilla">Vanilla JS</option>
+        <option value="next">Next.js + TS</option>
+        <option value="node">Node.js</option>
+        <option value="vanilla">Vanilla js</option>
         <option value="personal">Personal projects</option>
         <option value="command">Command projects</option>
-        <option value="new">New</option>
         <option value="2025">2025 year</option>
         <option value="2024">2024 year</option>
         <option value="2023">2023 year</option>

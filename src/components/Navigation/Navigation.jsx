@@ -19,7 +19,7 @@ export default function Navigation() {
             </li>
             <li>
               <NavLink className={isActive} to="/projects">
-                Projects
+                Works
               </NavLink>
             </li>
             <li>
