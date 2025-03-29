@@ -31,6 +31,7 @@
 @media (min-width: 768px) {
   .list {
     grid-template-columns: repeat(2, 1fr);
+    align-items: start;
   }
   .title {
     font-size: 14px;

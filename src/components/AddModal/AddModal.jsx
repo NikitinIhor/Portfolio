@@ -12,7 +12,7 @@ export default function AddModal({ addModalIsopen, closeAddModal }) {
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
-      borderRadius: 8,
+      borderRadius: 16,
       color: "white",
       height: "400px",
       boxShadow: "8px 8px 8px black",

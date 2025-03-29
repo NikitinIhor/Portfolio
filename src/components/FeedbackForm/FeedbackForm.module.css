@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   margin: 0 auto;
   width: 260px;
   height: 100%;
@@ -22,7 +22,8 @@
 label {
   margin-bottom: 5px;
   font-weight: bold;
-  color: #333;
+  color: #545454;
+  font-size: 12px;
 }
 
 .field {
@@ -57,23 +58,23 @@ label {
 .btn {
   width: 100px;
   height: 40px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #007bff;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: rgb(74, 138, 74);
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 .btn:first-child {
-  background-color: red;
+  background-color: rgb(218, 94, 94);
 }
 .btn:first-child:hover {
   background-color: rgb(188, 52, 52);
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: rgb(46, 117, 46);
 }
 .loader {
   position: absolute;
