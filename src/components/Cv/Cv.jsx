@@ -42,7 +42,7 @@ export default function Cv() {
       <a
         onClick={handleClick}
         className={css.image}
-        href="https://drive.google.com/file/d/1_hTbd7JfcXQjnnKrZg9lrq_EMxWBZcyn/view?usp=sharing"
+        href="https://drive.google.com/file/d/12XBLVhEyq1t31FzTok9vlORioE1__ZMk/view?usp=sharing"
         target="_blank"
       >
         <img src={image} alt="my CV" />
