@@ -42,7 +42,7 @@ export default function Diploma() {
       <a
         onClick={handleClick}
         className={css.image}
-        href="https://drive.google.com/file/d/1mi2nFWC6T7ek0FkiD6vSGSaZ7TdACtGp/view?usp=sharing"
+        href="https://drive.google.com/file/d/1gBaTxEuENfxv3uBDCPmM6gpUvLDAiA4k/view?usp=sharing"
         target="_blank"
       >
         <img src={image} alt="my CV" />
