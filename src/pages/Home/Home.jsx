@@ -1,7 +1,7 @@
 import Cv from "../../components/Cv/Cv";
 import Diploma from "../../components/Diploma/Diploma";
 import TypingEffect from "../../components/TypingEffect/TypingEffect";
-import css from "./Home.module.css";
+import s from "./Home.module.css";
 
 const text = `Hello! I'm Nikitin Ihor &
 
@@ -20,10 +20,10 @@ and efficient server-side solutions.`;
 
 export default function Home() {
   return (
-    <div className={css.wrapper}>
+    <div className={s.wrapper}>
       <div className="container">
         <TypingEffect text={text} />
-        <div className={css.body}>
+        <div className={s.body}>
           <Diploma />
           <Cv />
         </div>

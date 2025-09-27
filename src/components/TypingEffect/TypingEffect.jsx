@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import css from "./TypingEffect.module.css";
+import s from "./TypingEffect.module.css";
 
 export default function TypingEffect({ text }) {
   const [result, setResult] = useState("");
@@ -20,11 +20,11 @@ export default function TypingEffect({ text }) {
   const newText = allText.join("&");
 
   return (
-    <div className={css.wrapper}>
-      <pre className={css.title}>
+    <div className={s.wrapper}>
+      <pre className={s.title}>
         {title} {index < text.indexOf("&") ? "|" : ""}
       </pre>
-      <pre className={css.text}>
+      <pre className={s.text}>
         {newText}
         {index < text.length ? "|" : ""}
       </pre>
