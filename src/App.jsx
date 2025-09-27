@@ -10,12 +10,13 @@ const AllProjects = lazy(() => import("./pages/AllProjects/AllProjects"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const Contacts = lazy(() => import("./pages/Contacts/Contacts"));
 const Projects = lazy(() => import("./pages/Projects/Projects"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 
 export default function App() {
   return (
     <>
+      <Navigation />
       <Suspense fallback={<Loader />}>
-        <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />}>
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="all" element={<AllProjects />} />
           </Route>
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
       <Footer />

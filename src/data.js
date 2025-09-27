@@ -1,33 +1,47 @@
-import ARTHROHARD from "../src/images/projects/ARTHROHARD.jpg";
-import familyNest from "../src/images/projects/Family-Nest-Farm-Adventures.jpg";
-import favorFood from "../src/images/projects/favorFood.jpg";
-import findpare from "../src/images/projects/findpare.jpg";
-import mygym from "../src/images/projects/gym.jpg";
-import hello from "../src/images/projects/hello.jpg";
-import idosell_clone from "../src/images/projects/idosel_clone.jpg";
-import multikino from "../src/images/projects/multikino.jpg";
-import nannyServices from "../src/images/projects/nannyServices.jpg";
-import notebook from "../src/images/projects/notebook.jpg";
-import organic from "../src/images/projects/organic.jpg";
-import phonebook from "../src/images/projects/phonebook.jpg";
-import pizzaMaker from "../src/images/projects/pizzaMaker.jpg";
-import readJourney from "../src/images/projects/read-jourbey.jpg";
-import roin_group from "../src/images/projects/roin_group.jpg";
-import superMatch from "../src/images/projects/super-match.jpg";
-import travelTracks from "../src/images/projects/travelTracks.jpg";
-import usersList from "../src/images/projects/userslist.jpg";
-import wallet from "../src/images/projects/wallet.jpg";
-import waterTracker from "../src/images/projects/waterTracker.jpg";
-import weatherDashboard from "../src/images/projects/weatherDashboard.jpg";
+import * as images from "./images/images";
 
 export const DATA = [
   {
-    id: 1.1,
+    id: 1,
+    title: "Petlove",
+    subtitle: "Personal project",
+    skills:
+      "Next.js, React.js, Redux, TypeScript, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
+    image: images.petlove,
+    alt: "petlove",
+    description:
+      "Petlove is a web app designed for pet adoption and care. Users can browse available pets, view details, and connect with shelters or owners. The platform is built with Next.js for fast performance and SEO optimization.",
+    url: "https://petlove-se4b.vercel.app",
+    github: "https://github.com/NikitinIhor/petlove",
+    isNew: true,
+    year: "2025",
+    filter: "next",
+    top: true,
+  },
+  {
+    id: 2,
+    title: "Multikino-2.0",
+    subtitle: "Personal project",
+    skills:
+      "React.js, Redux, TS, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
+    image: images.multikino,
+    alt: "Multikino-2.0",
+    description:
+      "Multikino-2.0 is a modern cinema booking platform where users can browse movies, view showtimes, and reserve tickets online. It features a clean UI, smooth navigation, and state management with Redux for a seamless user experience.",
+    url: "https://multi-kino-2-0.vercel.app",
+    github: "https://github.com/NikitinIhor/MultiKino-2.0",
+    isNew: true,
+    year: "2025",
+    filter: "react",
+    top: true,
+  },
+  {
+    id: 3,
     title: "READ JOURNEY",
     subtitle: "Personal project",
     skills:
       "React.js, Redux, TS, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
-    image: readJourney,
+    image: images.readJourney,
     alt: "read journey",
     description:
       "READ JOURNEY is an app where you can find, add, and read books, filter selections, track your reading progress, and build your personal library with ease!",
@@ -39,12 +53,12 @@ export const DATA = [
     top: true,
   },
   {
-    id: 1,
+    id: 4,
     title: "Roin Group",
     subtitle: "Command project",
     skills:
       "Responsive Design, JavaScript (ES6+), TypeScript, Next.js, React, Tailwind CSS, CSS3, UI/UX Design, Node.js, Animation, Version Control (Git), Docker",
-    image: roin_group,
+    image: images.roin_group,
     alt: "Roin Group",
     description:
       "Roin Group is a website where you can search, choose, and order shower cabins, mirrors, glass partitions, terraces, canopies, and other glass products. You can customize your selection by width, price, and colors to create your ideal bathroom",
@@ -56,12 +70,12 @@ export const DATA = [
     top: true,
   },
   {
-    id: 2,
+    id: 5,
     title: "Super Match",
     subtitle: "Command project",
     skills:
       "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
-    image: superMatch,
+    image: images.superMatch,
     alt: "Super Match",
     description:
       "Super Match is an exciting match-3 game where you can team up with unique partners, use powerful boosters, compete in tournaments, and challenge friends in thrilling PvP battles. Join now for endless fun and rewards!",
@@ -72,12 +86,12 @@ export const DATA = [
     filter: "vanilla",
   },
   {
-    id: 3,
+    id: 6,
     title: "Family-Nest-Farm-Adventures",
     subtitle: "Command project",
     skills:
       "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
-    image: familyNest,
+    image: images.familyNest,
     alt: "Family-Nest-Farm-Adventures",
     description:
       "Family-Nest: Farm Adventures is a farming simulation game where players grow crops, raise animals, and complete exciting quests. Build your farm, enjoy heartwarming stories, and embark on fun adventures!",
@@ -89,12 +103,12 @@ export const DATA = [
     top: true,
   },
   {
-    id: 4,
+    id: 7,
     title: "ARTHROHARD",
     subtitle: "Personal project",
     skills:
       "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
-    image: ARTHROHARD,
+    image: images.ARTHROHARD,
     alt: "ARTHROHARD",
     description:
       "Arthrohard is a highly digestible dietary supplement in the form of a syrup, created with the health of your dog's or cat's joints in mind. Our mobile app allows quick access to information about the product, its ingredients and health benefits, as well as allows interaction with various product presentation options.",
@@ -106,13 +120,13 @@ export const DATA = [
     top: true,
   },
   {
-    id: 4.1,
+    id: 8,
     title: "idoSell_CLONE",
     subtitle: "Personal project",
     skills:
       "Node.js, MongoDB, Express, Swagger and OpenAPI, RESTful APIs, JWT, Mongoose, Git, and others",
 
-    image: idosell_clone,
+    image: images.idosell_clone,
     alt: "idosell_clone",
     description:
       "Idose Clone is a backend built with MongoDB (NoSQL) that integrates with the Idosell platform to fetch product data. It features user authentication with login and registration, allowing secure access to product information.",
@@ -122,12 +136,12 @@ export const DATA = [
     filter: "node",
   },
   {
-    id: 5,
+    id: 9,
     title: "FavorFood",
     subtitle: "Personal project",
     skills:
       "React.js, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
-    image: favorFood,
+    image: images.favorFood,
     alt: "favorFood",
     description:
       "Welcome to FovorFood, your one-stop destination for delicious food! Browse through our diverse menu of dinner options, cakes, salads, and more. Effortlessly search for your favorites, add them to your cart, and place your order with just a few clicks.",
@@ -138,12 +152,12 @@ export const DATA = [
     top: true,
   },
   {
-    id: 6,
+    id: 10,
     title: "WaterTracker",
     subtitle: "Command project",
     skills:
       "React.js, resux, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control, Node.js, MongoDB, Express",
-    image: waterTracker,
+    image: images.waterTracker,
     alt: "waterTracker",
     description:
       "Stay hydrated and monitor your water intake with our user-friendly Water Tracker app. Users can easily log in to set daily water goals and select the amount of water they drink throughout the day. The app also features a history section, allowing users to review their daily, weekly, and monthly hydration habits. With reminders and insights, our Water Tracker helps you develop healthier hydration habits and achieve your wellness goals!",
@@ -155,12 +169,12 @@ export const DATA = [
     top: true,
   },
   {
-    id: 7,
+    id: 11,
     title: "Nanny.Services",
     subtitle: "Personal project",
     skills:
       "React.js, Redux, TS, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
-    image: nannyServices,
+    image: images.nannyServices,
     alt: "nannyServices",
     description:
       "NannyServices allows users to register, log in, and browse a list of nannies. They can filter nannies by price, rating, and availability, and contact them via a built-in form.",
@@ -170,12 +184,12 @@ export const DATA = [
     filter: "ts",
   },
   {
-    id: 8,
+    id: 12,
     title: "TravelTracks",
     subtitle: "Personal project",
     skills:
       "React.js, Redux, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
-    image: travelTracks,
+    image: images.travelTracks,
     alt: "travelTracks",
     description:
       "Is a travel companion app that helps users find campers in any region. With advanced filters, users can refine their search to match specific needs, from camper type to amenities. The app offers captivating images for each camper, allowing users to browse visually. An easy-to-use order form streamlines booking, making it a convenient tool for planning road trips and adventures.",
@@ -185,12 +199,12 @@ export const DATA = [
     filter: "react",
   },
   {
-    id: 9,
+    id: 13,
     title: "Weather application",
     subtitle: "Personal project",
     skills:
       "React.js, Redux, Redux Persist, Axios, API Integration, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
-    image: weatherDashboard,
+    image: images.weatherDashboard,
     alt: "Weather-Dashboard-application",
     description:
       "A straightforward weather app that lets you enter any city and instantly receive up-to-date weather information. From current temperature and wind speed to other essential weather details, WeatherWatch keeps you informed with just a few taps. Perfect for planning your day or your travels, it offers a quick and easy way to stay on top of the weather.",
@@ -200,12 +214,12 @@ export const DATA = [
     filter: "react",
   },
   {
-    id: 10,
+    id: 14,
     title: "PizzaMaker",
     subtitle: "Personal project",
     skills:
       "React.js, Responsive Design, JavaScript (ES6+), CSS3, Animations, UI/UX Design, Version Control",
-    image: pizzaMaker,
+    image: images.pizzaMaker,
     alt: "multikino",
     description:
       "An interactive web app where users can customize their pizza by choosing different halves, each with its own price. After selecting, the order is animated into the cart, where users can either finalize the purchase or cancel. The app offers a fun and easy way to create and manage custom pizza orders.",
@@ -215,42 +229,12 @@ export const DATA = [
     filter: "react",
   },
   {
-    id: 11,
-    title: "MultiKino",
-    subtitle: "Personal project",
-    skills:
-      "React.js, Redux, Axios, API Integration, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
-    image: multikino,
-    alt: "multikino",
-    description:
-      "A movie discovery platform built with React and Redux, integrating the Movie Database API. Users can search for films, view detailed information, and watch trailers. The app is fully responsive and efficiently handles state management for a smooth user experience.",
-    url: "https://goit-react-hw-05-one-theta.vercel.app/",
-    github: "https://github.com/NikitinIhor/MultiKino",
-    year: "2024",
-    filter: "react",
-  },
-  {
-    id: 12,
-    title: "Phone book",
-    subtitle: "Personal project",
-    skills:
-      "React.js, Redux, Redux Persist, Axios, API Integration, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
-    image: phonebook,
-    alt: "phonebook",
-    description:
-      "A React application utilizing Redux and Redux Persist for state management, featuring secure login and logout functionality. Users can efficiently manage their contacts with operations to add, update, and delete entries.",
-    url: "https://goit-react-hw-08-five-xi.vercel.app/",
-    github: "https://github.com/NikitinIhor/PhoneBook",
-    year: "2023",
-    filter: "react",
-  },
-  {
-    id: 13,
+    id: 15,
     title: "Portfolio Website",
     subtitle: "Command project",
     skills:
       "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
-    image: hello,
+    image: images.hello,
     alt: "hello",
     description:
       "A collaborative team project, we developed a responsive portfolio website that showcases various projects, complete with JavaScript animations for enhanced user experience. My primary role was to create and implement a contact section, which included a fully functional form for users to send messages directly from the site.",
@@ -261,12 +245,12 @@ export const DATA = [
     top: true,
   },
   {
-    id: 14,
+    id: 16,
     title: "Health Food",
     subtitle: "Command project",
     skills:
       "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
-    image: organic,
+    image: images.organic,
     alt: "organic",
     description:
       "A team project focused on promoting health food. My primary responsibility was developing and modifying a key section of the application, while also contributing to other areas of the project. The experience also strengthened my skills in teamwork and project management.",
@@ -276,77 +260,17 @@ export const DATA = [
     filter: "vanilla",
   },
   {
-    id: 15,
-    title: "List of users",
-    subtitle: "Personal project",
-    skills:
-      "React.js, Redux, Redux Persist, Axios, API Integration, Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Asynchronous Programming, Version Control",
-    image: usersList,
-    alt: "usersList",
-    description:
-      "A React and Redux app with persistent state, allowing users to add, update, and delete profiles seamlessly. It ensures data continuity across sessions with Redux Persist and features a clean, responsive design for easy user management.",
-    url: "https://my-user-list.vercel.app/",
-    github: "https://github.com/NikitinIhor/My_user_list",
-    year: "2023",
-    filter: "react",
-  },
-  {
-    id: 16,
-    title: "Notebook",
-    subtitle: "Personal project",
-    skills:
-      "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
-    image: notebook,
-    alt: "notebook",
-    description:
-      "A vanilla JavaScript application that enables users to create and manage notes with descriptions and categories. The app offers a straightforward interface for adding, organizing, and viewing notes.",
-    url: "https://nikitinihor.github.io/my-note/",
-    github: "https://github.com/NikitinIhor/my-note",
-    year: "2022",
-    filter: "vanilla",
-  },
-  {
     id: 17,
     title: "Find a pair",
     subtitle: "Personal project",
     skills:
       "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
-    image: findpare,
+    image: images.findpare,
     alt: "findpair",
     description:
       "A vanilla JavaScript game where players find and match pairs of animal cards. The game features a simple and engaging interface, challenging players to improve their memory and attention skills as they uncover and match the animal pairs.",
     url: "https://nikitinihor.github.io/game-find-pair/",
     github: "https://github.com/NikitinIhor/game-find-pair",
-    year: "2022",
-    filter: "vanilla",
-  },
-  {
-    id: 18,
-    title: "Personal wallet",
-    subtitle: "Personal project",
-    skills:
-      "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
-    image: wallet,
-    alt: "wallet",
-    description:
-      "A dynamic wallet application built with Vanilla JavaScript. It allows users to add money, track income and expenses, and manage transactions, all with smooth, engaging animations for an enhanced user experience.",
-    url: "https://nikitinihor.github.io/wallet/",
-    github: "https://github.com/NikitinIhor/wallet",
-    year: "2022",
-    filter: "vanilla",
-  },
-  {
-    id: 19,
-    title: "My Gym",
-    subtitle: "Personal project",
-    skills:
-      "Responsive Design, JavaScript (ES6+), CSS3, UI/UX Design, Version Control",
-    image: mygym,
-    alt: "mygym",
-    description:
-      "A lightweight gym management app built with vanilla JavaScript. It allows users to create, modify, and manage workout routines with ease.",
-    url: "https://nikitinihor.github.io/My-Gym/",
-    github: "https://github.com/NikitinIhor/My-Gym",
     year: "2022",
     filter: "vanilla",
   },

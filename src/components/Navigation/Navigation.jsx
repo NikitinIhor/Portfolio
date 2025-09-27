@@ -1,32 +1,30 @@
 import clsx from "clsx";
 import { NavLink } from "react-router-dom";
-import css from "./Navigation.module.css";
+import s from "./Navigation.module.css";
 
 export default function Navigation() {
   const isActive = ({ isActive }) => {
-    return clsx(css.link, isActive && css.isActive);
+    return clsx(s.link, isActive && s.isActive);
   };
 
+  const links = [
+    { to: "/", label: "Home" },
+    { to: "/projects", label: "Works" },
+    { to: "/contacts", label: "Contacts" },
+  ];
+
   return (
-    <header className={css.header}>
+    <header className={s.header}>
       <div className="container">
         <nav>
-          <ul className={css.list}>
-            <li>
-              <NavLink className={isActive} to="/">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className={isActive} to="/projects">
-                Works
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className={isActive} to="/contacts">
-                Contacts
-              </NavLink>
-            </li>
+          <ul className={s.list}>
+            {links.map(({ to, label }) => (
+              <li key={to}>
+                <NavLink className={isActive} to={to}>
+                  {label}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
